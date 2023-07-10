@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+// Fonts
+$font-base: 'Cormorant Upright', serif;
+$font-alt: 'Open Sans', sans-serif;
+$base-font-size: 16px;
+
+// Colors
+$color-golden: #dcca87;
+$color-black: #0c0c0c;
+$color-gray: #545454;
+$color-crimson: #f5efdb;
+$color-grey: #aaaaaa;
+$color-white: #ffffff;
+
+// Breakpoints
+$breakpoints: (
+	'mobile': 490px,
+	'medium-mobile': 643px,
+	'tablet': 768px,
+	'large-tablet': 977px,
+	'desktop': 1280px,
+	'large-desktop': 1460px,
+) !default;

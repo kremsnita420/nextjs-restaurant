@@ -1,0 +1,34 @@
+/*
+  Media Query Mixin
+  Uses breakpoints defined within _variables.scss
+ */
+
+/* Mixin to manage responsive breakpoints with min-width*/
+@mixin respond-to($breakpoint) {
+	/* If the key exists in the map */
+	@if map-has-key($breakpoints, $breakpoint) {
+		/* Prints a media query based on the value */
+		@media (min-width: map-get($breakpoints, $breakpoint)) {
+			@content;
+		}
+	}
+}
+
+/* A media query starting at $point1 and ending before $point2 */
+@mixin bp-range($point1, $point2) {
+	$size1: map-get($breakpoints, $point1);
+	$size2: map-get($breakpoints, $point2);
+
+	@media (min-width: $size1) and (max-width: $size2) {
+		@content;
+	}
+}
+
+/* Mixin to manage responsive breakpoints with max-width*/
+@mixin max-width-mq($key) {
+	$size: map-get($breakpoints, $key);
+
+	@media only screen and (max-width: $size) {
+		@content;
+	}
+}
