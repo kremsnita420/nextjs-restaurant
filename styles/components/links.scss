@@ -1,0 +1,44 @@
+// Navigation
+@mixin mobile-nav-link {
+	font-family: $font-base;
+	display: block;
+	padding: 1rem 2rem;
+	text-align: center;
+	color: $color-golden;
+	font-size: 2.5rem;
+
+	&:hover {
+		color: $color-white;
+	}
+
+	@include respond-to('tablet') {
+		font-size: 4rem;
+	}
+}
+
+@mixin desktop-nav-link {
+	@include alt-font;
+	cursor: pointer;
+	padding: 0 1rem;
+	position: relative;
+	margin: 0 1rem;
+	transition: border-color 0.3s ease, color 0.3s ease;
+	&::before {
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: -2px;
+		left: 0;
+		width: 0%;
+		height: 2px;
+		background-color: $color-golden;
+		transition: width 0.3s ease;
+		transform-origin: left;
+	}
+
+	&:hover {
+		&::before {
+			width: 100%;
+		}
+	}
+}

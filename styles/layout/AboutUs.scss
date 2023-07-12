@@ -1,0 +1,102 @@
+.app-aboutus {
+	.section__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		min-height: 80vh;
+		position: relative;
+		z-index: 2;
+		.app-aboutus__left,
+		.app-aboutus__right {
+			display: flex;
+			flex-direction: column;
+			margin: 4rem 0;
+			max-width: 64rem;
+
+			&__p-text {
+				margin: 3rem 0;
+			}
+
+			& .gold__button {
+				@include gold-button;
+			}
+		}
+
+		.app-aboutus__left {
+			align-items: flex-start;
+			align-self: flex-start;
+			img {
+				transform: rotate(180deg);
+			}
+			&__p-text {
+				@include aboutus_p_text(left);
+			}
+		}
+
+		.app-aboutus__middle {
+			position: relative;
+			&__knife {
+				max-height: 32rem;
+				max-width: 5rem;
+			}
+
+			&__g {
+				position: absolute;
+				inset: 0;
+				display: block;
+				z-index: -1;
+				transform: translate(-45%, 0%);
+				width: 32rem;
+				height: 32rem;
+				opacity: 0.5;
+			}
+		}
+
+		.app-aboutus__right {
+			align-self: flex-end;
+			align-items: flex-end;
+			&__p-text {
+				@include aboutus_p_text(right);
+			}
+		}
+
+		@include respond-to('tablet') {
+			.app-aboutus__middle {
+				&__knife {
+					max-height: 64rem;
+					max-width: 10rem;
+				}
+
+				&__g {
+					transform: translate(-35%, 45%);
+				}
+			}
+		}
+
+		@include respond-to('desktop') {
+			flex-direction: row;
+			.app-aboutus__left,
+			.app-aboutus__right {
+				align-self: initial;
+				max-width: 32rem;
+				margin: 4rem;
+			}
+
+			.app-aboutus__middle {
+				margin: 0 4rem;
+
+				&__knife {
+					max-height: 94rem;
+					max-width: 14rem;
+				}
+
+				&__g {
+					transform: translate(-36%, 45%);
+					width: 52rem;
+					height: 52rem;
+				}
+			}
+		}
+	}
+}

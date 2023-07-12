@@ -1,0 +1,12 @@
+.sub-heading {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+
+	&__img {
+		& img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}

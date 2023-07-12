@@ -21,4 +21,9 @@ $breakpoints: (
 	'large-tablet': 977px,
 	'desktop': 1280px,
 	'large-desktop': 1460px,
+	'x-large-desktop': 2000px,
 ) !default;
+
+// Layout max width
+$layout-max-width: 144rem;
+$hero-max-width: 168rem;

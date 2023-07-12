@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '@styles/Intro.scss';
+import '@styles/layout/Intro.scss';
 
 const Intro = () => <div>Intro</div>;
 

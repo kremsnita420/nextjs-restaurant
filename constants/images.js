@@ -1,4 +1,5 @@
 import bg from '@public/assets/bg.png';
+import wave from '@public/assets/wave_element.svg'
 import chef from '@public/assets/chef.png';
 import G from '@public/assets/G.png';
 import gallery01 from '@public/assets/gallery01.png';
@@ -10,7 +11,8 @@ import logo from '@public/assets/logo.png';
 import menu from '@public/assets/menu.png';
 import overlaybg from '@public/assets/overlaybg.png';
 import spoon from '@public/assets/spoon.svg';
-import welcome from '@public/assets/welcome.png';
+import welcome360 from '@public/assets/welcome_360.jpg';
+import welcome613 from '@public/assets/welcome_613.jpg';
 import findus from '@public/assets/findus.png';
 import laurels from '@public/assets/laurels.png';
 import award01 from '@public/assets/award01.png';
@@ -34,7 +36,8 @@ export default {
   menu,
   overlaybg,
   spoon,
-  welcome,
+  welcome360,
+  welcome613,
   findus,
   laurels,
   award01,
@@ -44,4 +47,5 @@ export default {
   sign,
   quote,
   gericht,
+  wave
 };

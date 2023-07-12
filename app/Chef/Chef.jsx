@@ -1,4 +1,4 @@
-import '@styles/Chef.scss';
+import '@styles/layout/Chef.scss';
 
 const Chef = () => <div>Chef</div>;
 

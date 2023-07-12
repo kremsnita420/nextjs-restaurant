@@ -1,6 +1,6 @@
 import { Navbar } from '@components';
+import { images } from '@constants';
 import '@styles/base/globals.scss';
-import { Open_Sans } from 'next/font/google';
 
 export const metadata = {
 	title: 'Create Next App',
@@ -10,7 +10,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>
-			<body suppressHydrationWarning={true}>
+			<body
+				style={{
+					backgroundImage: `url(${images.wave.src})`,
+					backgroundPosition: 'center',
+					backgroundSize: 'cover',
+					backgroundRepeat: 'repeat',
+					backgroundAttachment: 'fixed',
+				}}
+				suppressHydrationWarning={true}>
 				<Navbar />
 				{children}
 			</body>

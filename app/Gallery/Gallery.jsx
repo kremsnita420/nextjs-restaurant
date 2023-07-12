@@ -1,4 +1,4 @@
-import '@styles/Gallery.scss';
+import '@styles/layout/Gallery.scss';
 
 const Gallery = () => <div>Gallery</div>;
 

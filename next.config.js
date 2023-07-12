@@ -8,9 +8,25 @@ const nextConfig = {
             @import "base/animations.scss";
             @import "base/media-queries.scss";
             @import "base/typography.scss";
+            @import "components/links.scss";
+            @import "components/buttons.scss";
         `
     },
 
+    // webpack(config, { isServer }) {
+    //     config.module.rules.push({
+    //         test: /\.(mp4|jpg|jpeg|png|svg)$/,
+    //         type: 'asset',
+
+    //         generator: {
+    //             filename: '[name][ext]',
+    //         },
+    //     });
+
+    //     return config;
+    // }
 }
+
+
 
 module.exports = nextConfig
