@@ -2,9 +2,9 @@
 	& .section__wrapper {
 		display: flex;
 		align-items: center;
-		justify-content: center;
+		justify-content: flex-start;
 		flex-direction: column;
-		gap: 4rem;
+		margin-bottom: 2rem;
 		& .large_sub_heading {
 			& > h2 {
 				margin-inline: auto;
@@ -18,12 +18,13 @@
 			justify-content: center;
 			align-items: center;
 			gap: 2rem;
+			margin-bottom: 2rem;
 			width: 100%;
 
 			&__left,
 			&__middle,
 			&__right {
-				flex: 1;
+				width: 100%;
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
@@ -34,12 +35,13 @@
 				& > h3 {
 					@include special_menu_title;
 					width: fit-content;
+					margin-bottom: 2rem;
 				}
 			}
 
 			&__middle {
 				& img {
-					max-width: 22rem;
+					max-width: 32rem;
 					height: auto;
 				}
 			}

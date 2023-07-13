@@ -1,14 +1,14 @@
 .section__wrapper {
 	max-width: $layout-max-width;
 	margin-inline: auto;
-	padding: 3rem 6rem;
+	padding: 3rem;
 
 	@include respond-to('tablet') {
-		padding: 4rem 6rem;
+		padding: 6rem 6rem;
 	}
 
-	@include respond-to('large-desktop') {
-		padding: 4rem 0;
+	@include respond-to('desktop') {
+		padding: 6rem 0;
 	}
 }
 

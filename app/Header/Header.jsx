@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const Header = () => (
-	<div className='app-header' id='home'>
+	<header className='app-header' id='home'>
 		<div className='section__wrapper'>
 			<div className='app-header__info'>
 				<SubHeading
@@ -35,7 +35,7 @@ const Header = () => (
 				/>
 			</div>
 		</div>
-	</div>
+	</header>
 );
 
 export default Header;

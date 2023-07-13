@@ -1,0 +1,60 @@
+.app-chef {
+	.section__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-direction: column;
+
+		position: relative;
+
+		.app-chef__image,
+		.app-chef__desc {
+			max-width: 50rem;
+			height: auto;
+		}
+
+		.app-chef__image {
+			position: relative;
+			z-index: 2;
+
+			& img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+
+			&::before,
+			&::after {
+				content: '';
+				position: absolute;
+				display: block;
+				background-color: $color-golden;
+				width: 60%;
+				height: 60%;
+
+				z-index: -1;
+			}
+
+			&::before {
+				top: -2rem;
+				left: -2rem;
+			}
+
+			&::after {
+				bottom: -2rem;
+				right: -2rem;
+			}
+		}
+
+		.app-chef__desc {
+			margin: 4rem auto;
+			&__quote {
+				@include chef_quote;
+			}
+		}
+
+		@include respond-to('desktop') {
+			flex-direction: row;
+		}
+	}
+}

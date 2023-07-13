@@ -4,7 +4,7 @@ import { images } from '@constants';
 import { SubHeading } from '@components';
 import Link from 'next/link';
 const AboutUs = () => (
-	<div
+	<section
 		className='app-aboutus'
 		style={{
 			backgroundImage: `url(${images.bg.src})`,
@@ -60,7 +60,7 @@ const AboutUs = () => (
 				</Link>
 			</div>
 		</div>
-	</div>
+	</section>
 );
 
 export default AboutUs;
