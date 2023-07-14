@@ -10,6 +10,22 @@ import { useEffect, useState } from 'react';
 const Navbar = () => {
 	const [toggleMenu, setToggleMenu] = useState(false);
 
+	function onSticky() {
+		const element = document.querySelector('.app__navbar');
+
+		if (!element) {
+			return;
+		}
+
+		const observer = new IntersectionObserver(
+			([event]) => callback(event.intersectionRatio < 1),
+			{ threshold: [1], rootMargin: '-1px 0px 0px 0px' }
+		);
+		observer.observe(element);
+
+		return { observer, element };
+	}
+
 	// Prevent scrolling when mobile nav is open
 	useEffect(() => {
 		if (document) {

@@ -4,6 +4,8 @@ import { SubHeading } from '@components';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { BiDownArrow } from 'react-icons/bi';
+
 const Header = () => (
 	<header className='app-header' id='home'>
 		<div className='section__wrapper'>
@@ -24,16 +26,14 @@ const Header = () => (
 				</Link>
 			</div>
 			<div className='app-header__image'>
-				<Image
-					src={images.welcome613}
-					alt='Welcome picture'
-					as='image'
-					// width={500} automatically provided
-					// height={500} automatically provided
-					// blurDataURL="data:..." automatically provided
-					// placeholder="blur" // Optional blur-up while loading
-				/>
+				<Image src={images.welcome613} alt='Welcome picture' as='image' />
 			</div>
+
+			<Link className='scroll-down-link' href='#about'>
+				<BiDownArrow className='scroll-down-link__arrow scroll-down-link__arrow--1' />
+				<span>Scroll</span>
+				<BiDownArrow className='scroll-down-link__arrow scroll-down-link__arrow--2' />
+			</Link>
 		</div>
 	</header>
 );

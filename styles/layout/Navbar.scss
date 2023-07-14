@@ -1,5 +1,9 @@
 .app {
 	&__navbar {
+		position: sticky;
+		top: 0;
+		z-index: 100;
+		background-color: rgba($color-golden, 0.4);
 		width: 100%;
 		display: flex;
 		justify-content: space-between;

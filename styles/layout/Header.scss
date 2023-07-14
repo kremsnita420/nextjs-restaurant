@@ -67,6 +67,41 @@
 			}
 		}
 
+		.scroll-down-link {
+			position: absolute;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			bottom: 2rem;
+			right: 5rem;
+			color: $color-golden;
+			// text-transform: uppercase;
+			font-family: $font-base;
+			letter-spacing: 2px;
+			padding: 0.5rem;
+
+			&__arrow {
+				position: absolute;
+				animation: move-down-up 2s ease infinite forwards;
+				&--2 {
+					bottom: -50%;
+				}
+				&--1 {
+					bottom: -75%;
+				}
+			}
+
+			// &::before {
+			// 	content: '';
+			// 	width: 1px;
+			// 	background-color: $color-golden;
+			// 	height: 3rem;
+			// 	position: relative;
+			// 	bottom: -100%;
+			// }
+		}
+
 		@include respond-to('tablet') {
 			.app-header__image {
 				width: auto;
