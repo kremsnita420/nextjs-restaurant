@@ -13,18 +13,18 @@ const nextConfig = {
         `
     },
 
-    // webpack(config, { isServer }) {
-    //     config.module.rules.push({
-    //         test: /\.(mp4|jpg|jpeg|png|svg)$/,
-    //         type: 'asset',
+    webpack(config, { isServer }) {
+        config.module.rules.push({
+            test: /\.mp4$/,
+            type: 'asset',
 
-    //         generator: {
-    //             filename: '[name][ext]',
-    //         },
-    //     });
+            generator: {
+                filename: '[name][ext]',
+            },
+        });
 
-    //     return config;
-    // }
+        return config;
+    }
 }
 
 

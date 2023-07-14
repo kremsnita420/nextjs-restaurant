@@ -19,9 +19,9 @@
 @mixin desktop-nav-link {
 	@include alt-font;
 	cursor: pointer;
-	padding: 0 1rem;
+	padding: 0 0.5rem;
 	position: relative;
-	margin: 0 1rem;
+	margin: 0 0.5rem;
 	transition: border-color 0.3s ease, color 0.3s ease;
 	&::before {
 		content: '';
@@ -40,5 +40,10 @@
 		&::before {
 			width: 100%;
 		}
+	}
+
+	@include respond-to('tablet') {
+		padding: 0 1rem;
+		margin: 0 1rem;
 	}
 }

@@ -7,7 +7,7 @@
 		padding: 6rem 6rem;
 	}
 
-	@include respond-to('desktop') {
+	@include respond-to('large-desktop') {
 		padding: 6rem 0;
 	}
 }
