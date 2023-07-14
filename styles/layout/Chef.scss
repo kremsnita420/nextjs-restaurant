@@ -4,13 +4,15 @@
 		align-items: center;
 		justify-content: space-between;
 		flex-direction: column;
+		min-height: 70vh;
 
 		position: relative;
 
 		.app-chef__image,
 		.app-chef__desc {
-			max-width: 50rem;
 			height: auto;
+			width: 100%;
+			max-width: 50rem;
 		}
 
 		.app-chef__image {
