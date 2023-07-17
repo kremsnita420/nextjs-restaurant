@@ -48,10 +48,6 @@
 			}
 		}
 
-		& .gold__button {
-			@include gold-button;
-		}
-
 		@include respond-to('desktop') {
 			.app-special-menu__wrapper {
 				flex-direction: row;

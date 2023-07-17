@@ -2,13 +2,18 @@
 	max-width: $layout-max-width;
 	margin-inline: auto;
 	padding: 3rem;
+	padding-bottom: 6rem;
+	overflow-x: hidden;
 
 	@include respond-to('tablet') {
 		padding: 6rem 6rem;
+		padding-bottom: 9rem;
 	}
-
+	@include respond-to('desktop') {
+		padding: 9rem 6rem;
+	}
 	@include respond-to('large-desktop') {
-		padding: 6rem 0;
+		padding: 12rem 0;
 	}
 }
 
@@ -18,4 +23,8 @@
 
 .large_sub_heading h2 {
 	@include large_sub_heading;
+}
+
+.gold__button {
+	@include gold-button;
 }

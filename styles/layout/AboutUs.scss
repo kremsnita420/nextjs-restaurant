@@ -7,31 +7,32 @@
 		min-height: 80vh;
 		position: relative;
 		z-index: 2;
+
 		.app-aboutus__left,
 		.app-aboutus__right {
 			display: flex;
 			flex-direction: column;
-			margin: 4rem 0;
 			max-width: 64rem;
 
 			&__p-text {
 				margin: 3rem 0;
-			}
-
-			& .gold__button {
-				@include gold-button;
 			}
 		}
 
 		.app-aboutus__left {
 			align-items: flex-start;
 			align-self: flex-start;
+			margin-bottom: 4rem;
 			img {
 				transform: rotate(180deg);
 			}
 			&__p-text {
-				@include aboutus_p_text(left);
+				@include p_text(left);
 			}
+		}
+
+		.app-aboutus__right {
+			margin-top: 4rem;
 		}
 
 		.app-aboutus__middle {
@@ -57,7 +58,7 @@
 			align-self: flex-end;
 			align-items: flex-end;
 			&__p-text {
-				@include aboutus_p_text(right);
+				@include p_text(right);
 			}
 		}
 
@@ -80,7 +81,6 @@
 			.app-aboutus__right {
 				align-self: initial;
 				max-width: 32rem;
-				margin: 4rem;
 			}
 
 			.app-aboutus__middle {

@@ -10,21 +10,37 @@ import { useEffect, useState } from 'react';
 const Navbar = () => {
 	const [toggleMenu, setToggleMenu] = useState(false);
 
-	function onSticky() {
-		const element = document.querySelector('.app__navbar');
+	const [prevScrollPos, setPrevScrollPos] = useState(0);
+	const [visible, setVisible] = useState(true);
 
-		if (!element) {
-			return;
+	// Show and hide navbar on scroll
+	const handleScroll = () => {
+		const navEl = document.querySelector('.app__navbar');
+		const navElHeight = navEl.offsetHeight;
+		const currentScrollPos = window.scrollY;
+
+		if (currentScrollPos > navElHeight) {
+			navEl.classList.add('app__navbar__transparent-bg');
+			navEl.classList.remove('app__navbar__solid-bg');
+		} else {
+			navEl.classList.remove('app__navbar__transparent-bg');
+			navEl.classList.add('app__navbar__solid-bg');
 		}
 
-		const observer = new IntersectionObserver(
-			([event]) => callback(event.intersectionRatio < 1),
-			{ threshold: [1], rootMargin: '-1px 0px 0px 0px' }
-		);
-		observer.observe(element);
+		if (currentScrollPos > prevScrollPos) {
+			setVisible(false);
+		} else {
+			setVisible(true);
+		}
 
-		return { observer, element };
-	}
+		setPrevScrollPos(currentScrollPos);
+	};
+
+	useEffect(() => {
+		window.addEventListener('scroll', handleScroll);
+
+		return () => window.removeEventListener('scroll', handleScroll);
+	});
 
 	// Prevent scrolling when mobile nav is open
 	useEffect(() => {
@@ -34,7 +50,10 @@ const Navbar = () => {
 	}, [toggleMenu]);
 
 	return (
-		<nav className='app__navbar'>
+		<nav
+			className={`${
+				visible ? 'app__navbar__visible' : 'app__navbar__hidden'
+			} app__navbar`}>
 			<div className='app__navbar-logo'>
 				<Image src={images.gericht} alt='Site logo' width={120} height={30} />
 			</div>

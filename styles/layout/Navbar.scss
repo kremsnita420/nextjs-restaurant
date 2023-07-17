@@ -1,14 +1,30 @@
 .app {
 	&__navbar {
-		position: sticky;
-		top: 0;
+		position: fixed;
 		z-index: 100;
-		background-color: rgba($color-golden, 0.4);
+
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		padding: 1rem 2rem;
+		transition: top 0.3s ease;
+
+		&__visible {
+			top: 0;
+		}
+
+		&__hidden {
+			top: -18rem;
+		}
+
+		&__solid-bg {
+			background-color: transparent;
+		}
+
+		&__transparent-bg {
+			background-color: $color-black;
+		}
 	}
 
 	&__navbar-logo {
@@ -70,7 +86,7 @@
 				display: block;
 				width: 100%;
 				height: 3px;
-				background-color: $color-golden;
+				background-color: $color-white;
 				border-radius: 100rem;
 				transition: all 0.3s ease;
 			}

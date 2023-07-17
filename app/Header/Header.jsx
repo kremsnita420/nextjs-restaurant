@@ -28,13 +28,12 @@ const Header = () => (
 			<div className='app-header__image'>
 				<Image src={images.welcome613} alt='Welcome picture' as='image' />
 			</div>
-
-			<Link className='scroll-down-link' href='#about'>
-				<BiDownArrow className='scroll-down-link__arrow scroll-down-link__arrow--1' />
-				<span>Scroll</span>
-				<BiDownArrow className='scroll-down-link__arrow scroll-down-link__arrow--2' />
-			</Link>
 		</div>
+		<Link className='scroll-down-link' href='#about'>
+			<BiDownArrow className='scroll-down-link__arrow scroll-down-link__arrow--1' />
+			<span>Scroll</span>
+			<BiDownArrow className='scroll-down-link__arrow scroll-down-link__arrow--2' />
+		</Link>
 	</header>
 );
 
