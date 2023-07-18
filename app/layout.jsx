@@ -28,7 +28,7 @@ export const metadata = {
 		siteName: 'Gericht',
 		images: [
 			{
-				url: '/assets/bg.png',
+				url: '/assets/laurels.png',
 				width: 800,
 				height: 600,
 			},
