@@ -4,14 +4,24 @@ import '@styles/layout/Intro.scss';
 import { BsFillPlayFill, BsPauseFill } from 'react-icons/bs';
 
 import { useRef, useState } from 'react';
-
+import { useInView } from 'react-intersection-observer';
+import Image from 'next/image';
+import { images } from '@constants';
 const Intro = () => {
 	const [playVideo, setPlayVideo] = useState(false);
 	const vidRef = useRef();
 	return (
 		<div className='app__video'>
-			<video autoPlay muted loop width={500} height={500} ref={vidRef}>
+			<video
+				autoPlay={false}
+				muted
+				paused='true'
+				loop
+				width={500}
+				height={500}
+				ref={vidRef}>
 				<source src='/assets/meal.mp4' />
+				<Image src={images.bg} alt='Fallback video image' />
 			</video>
 			<div className='app__video-overlay'>
 				<div

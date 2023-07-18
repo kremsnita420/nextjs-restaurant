@@ -13,10 +13,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, A11y } from 'swiper/modules';
 // Import Swiper styles
 import 'swiper/scss';
-import 'swiper/scss/navigation';
+import { BsChevronDoubleLeft, BsChevronDoubleRight } from 'react-icons/bs';
 
 const Gallery = () => {
-	console.log(isMobile);
+	// console.log(isMobile);
 	return (
 		<div className='app-gallery'>
 			<div
@@ -53,10 +53,12 @@ const Gallery = () => {
 					<Swiper
 						// install Swiper modules
 						modules={[Navigation, A11y]}
-						spaceBetween={50}
+						spaceBetween={20}
 						slidesPerView={1}
-						navigation
-						pagination={{ clickable: true }}
+						navigation={{
+							nextEl: '.swiper-button-next',
+							prevEl: '.swiper-button-prev',
+						}}
 						breakpoints={{
 							550: {
 								slidesPerView: 2,
@@ -67,15 +69,22 @@ const Gallery = () => {
 							1280: {
 								slidesPerView: 2,
 							},
+							1440: {
+								slidesPerView: 3,
+							},
 						}}
-						onSwiper={(swiper) => console.log(swiper)}
-						onSlideChange={() => console.log('slide change')}>
+						className='mySwiper'>
 						<SwiperSlide>
 							<Image
 								src={images.gallery01}
 								placeholder='blur'
 								alt='Gallery image'
 								loading='lazy'
+								style={{
+									maxWidth: '100%',
+									height: 'auto',
+								}}
+								sizes='(max-width: 550px) 30rem, (max-width: 1200px) 35rem, 33vw'
 							/>
 						</SwiperSlide>
 						<SwiperSlide>
@@ -84,6 +93,11 @@ const Gallery = () => {
 								placeholder='blur'
 								alt='Gallery image'
 								loading='lazy'
+								style={{
+									maxWidth: '100%',
+									height: 'auto',
+								}}
+								sizes='(max-width: 550px) 30rem, (max-width: 1200px) 35rem, 33vw'
 							/>
 						</SwiperSlide>
 						<SwiperSlide>
@@ -92,6 +106,11 @@ const Gallery = () => {
 								placeholder='blur'
 								alt='Gallery image'
 								loading='lazy'
+								style={{
+									maxWidth: '100%',
+									height: 'auto',
+								}}
+								sizes='(max-width: 550px) 30rem, (max-width: 1200px) 35rem, 33vw'
 							/>
 						</SwiperSlide>
 						<SwiperSlide>
@@ -100,9 +119,22 @@ const Gallery = () => {
 								placeholder='blur'
 								alt='Gallery image'
 								loading='lazy'
+								style={{
+									maxWidth: '100%',
+									height: 'auto',
+								}}
+								sizes='(max-width: 550px) 30rem, (max-width: 1200px) 35rem, 33vw'
 							/>
 						</SwiperSlide>
 					</Swiper>
+					<div className='custom-pagination'>
+						<button className='swiper-buttom swiper-button-prev'>
+							<BsChevronDoubleLeft />
+						</button>
+						<button className='swiper-buttom swiper-button-next'>
+							<BsChevronDoubleRight />
+						</button>
+					</div>
 				</div>
 			</div>
 		</div>

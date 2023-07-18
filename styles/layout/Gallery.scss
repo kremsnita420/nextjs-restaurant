@@ -22,6 +22,7 @@
 		.app-gallery__text {
 			max-width: 42rem;
 			width: 100%;
+			margin: 2rem 0;
 
 			& > p {
 				margin: 1.5rem 0;
@@ -30,26 +31,67 @@
 		}
 
 		.app-gallery__images {
-			border: 1px solid white;
 			width: 100%;
 			overflow-x: auto;
 			position: relative;
 
 			& .swiper-wrapper {
 				& .swiper-slide {
-					max-width: 30rem;
-					max-height: 55rem;
+					max-height: 35rem;
+
+					& img {
+						object-fit: cover;
+					}
 				}
-				& img {
-					object-fit: cover;
-					margin-right: 2rem;
-					width: 100%;
-					max-height: 45rem;
+			}
+
+			& .custom-pagination {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				z-index: 10;
+				display: flex;
+				justify-content: space-between;
+				width: 100%;
+
+				& .swiper-buttom {
+					background-color: transparent;
+					cursor: pointer;
+					border: none;
+					font-size: 3rem;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					padding: 0.5rem;
+					border-radius: 50%;
+					transition: scale 0.3s ease, background-color 0.3s ease,
+						color 0.3s ease;
+
+					&:hover {
+						scale: 0.9;
+						color: $color-golden;
+						background-color: rgba($color: $color-black, $alpha: 0.6);
+					}
+
+					&.swiper-button-disabled:hover {
+						opacity: 0.3;
+						cursor: not-allowed;
+					}
 				}
 			}
 		}
 
 		@include respond-to('tablet') {
+			.app-gallery__text {
+				margin: 4rem 6rem 4rem 0rem;
+			}
+			.app-gallery__images {
+				& .swiper-wrapper {
+					& .swiper-slide {
+						max-height: 40rem;
+					}
+				}
+			}
 		}
 
 		@include respond-to('desktop') {
@@ -57,7 +99,7 @@
 			align-items: center;
 
 			.app-gallery__text {
-				margin-right: 6rem;
+				margin: 0rem 6rem 0rem 0rem;
 				& > p {
 					margin: 2.5rem 0;
 				}

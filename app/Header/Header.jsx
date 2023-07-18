@@ -32,6 +32,11 @@ const Header = () => (
 					alt='Welcome picture'
 					as='image'
 					loading='lazy'
+					style={{
+						maxWidth: '100%',
+						height: 'auto',
+					}}
+					sizes='(max-width: 550px) 100vw, (max-width: 1200px) 50vw, 33vw'
 				/>
 			</div>
 		</div>
