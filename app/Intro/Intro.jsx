@@ -15,7 +15,7 @@ const Intro = () => {
 			<video
 				autoPlay={false}
 				muted
-				playsinline
+				playsinline={true}
 				poster={images.welcome613}
 				paused='true'
 				loop
