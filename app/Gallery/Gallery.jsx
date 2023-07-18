@@ -1,6 +1,7 @@
 'use client';
 
 import '@styles/layout/Gallery.scss';
+import { data } from '@constants';
 import { images } from '@constants';
 import { SubHeading } from '@components';
 import Link from 'next/link';
@@ -16,7 +17,8 @@ import 'swiper/scss';
 import { BsChevronDoubleLeft, BsChevronDoubleRight } from 'react-icons/bs';
 
 const Gallery = () => {
-	// console.log(isMobile);
+	const gallery = data.galleryImages;
+
 	return (
 		<div className='app-gallery'>
 			<div
@@ -74,58 +76,23 @@ const Gallery = () => {
 							},
 						}}
 						className='mySwiper'>
-						<SwiperSlide>
-							<Image
-								src={images.gallery01}
-								placeholder='blur'
-								alt='Gallery image'
-								loading='lazy'
-								style={{
-									maxWidth: '100%',
-									height: 'auto',
-								}}
-								sizes='(max-width: 550px) 30rem, (max-width: 1200px) 35rem, 33vw'
-							/>
-						</SwiperSlide>
-						<SwiperSlide>
-							<Image
-								src={images.gallery02}
-								placeholder='blur'
-								alt='Gallery image'
-								loading='lazy'
-								style={{
-									maxWidth: '100%',
-									height: 'auto',
-								}}
-								sizes='(max-width: 550px) 30rem, (max-width: 1200px) 35rem, 33vw'
-							/>
-						</SwiperSlide>
-						<SwiperSlide>
-							<Image
-								src={images.gallery03}
-								placeholder='blur'
-								alt='Gallery image'
-								loading='lazy'
-								style={{
-									maxWidth: '100%',
-									height: 'auto',
-								}}
-								sizes='(max-width: 550px) 30rem, (max-width: 1200px) 35rem, 33vw'
-							/>
-						</SwiperSlide>
-						<SwiperSlide>
-							<Image
-								src={images.gallery04}
-								placeholder='blur'
-								alt='Gallery image'
-								loading='lazy'
-								style={{
-									maxWidth: '100%',
-									height: 'auto',
-								}}
-								sizes='(max-width: 550px) 30rem, (max-width: 1200px) 35rem, 33vw'
-							/>
-						</SwiperSlide>
+						{gallery &&
+							gallery.map((img, i) => (
+								<SwiperSlide key={`image-${i}`}>
+									<Image
+										src={img.imgUrl}
+										placeholder='blur'
+										alt={img.alt}
+										loading='lazy'
+										style={{
+											maxWidth: '100%',
+											height: 'auto',
+										}}
+										as='image'
+										sizes='(max-width: 550px) 30rem, (max-width: 1200px) 35rem, 33vw'
+									/>
+								</SwiperSlide>
+							))}
 					</Swiper>
 					<div className='custom-pagination'>
 						<button className='swiper-buttom swiper-button-prev'>

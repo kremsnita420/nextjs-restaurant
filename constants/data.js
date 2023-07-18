@@ -1,4 +1,5 @@
 import images from './images';
+import gallery from './gallery';
 
 const wines = [
   {
@@ -79,4 +80,23 @@ const awards = [
   },
 ];
 
-export default { wines, cocktails, awards };
+const galleryImages = [
+  {
+    imgUrl: images.gallery01,
+    alt: 'Gallery image'
+  },
+  {
+    imgUrl: images.gallery02,
+    alt: 'Gallery image'
+  },
+  {
+    imgUrl: images.gallery03,
+    alt: 'Gallery image'
+  },
+  {
+    imgUrl: images.gallery04,
+    alt: 'Gallery image'
+  },
+]
+
+export default { wines, cocktails, galleryImages, awards };
