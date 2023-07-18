@@ -1,0 +1,84 @@
+.app-footer {
+	& .section__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-direction: column;
+		position: relative;
+
+		& .app-footer__top {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			flex-direction: column;
+			position: relative;
+			width: 100%;
+			margin-bottom: 4rem;
+		}
+		.app-footer__contact,
+		.app-footer__quote {
+			margin-bottom: 4rem;
+		}
+
+		.app-footer__quote {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			max-width: 44rem;
+		}
+
+		& .app-footer__logo {
+			max-width: 15rem;
+			margin-bottom: 4rem;
+		}
+		.app-footer__hours,
+		.app-footer__contact {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			max-width: 35rem;
+			width: 100%;
+			& > h4 {
+				@include footer_section_title;
+				margin-bottom: 2rem;
+			}
+			& span {
+				display: block;
+			}
+			& p,
+			& a {
+				@include footer_sub_text;
+			}
+			& p,
+			& a {
+				display: block;
+				margin-bottom: 1rem;
+			}
+		}
+
+		& .app-footer__bottom {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			& .app-footer__legal {
+				width: 100%;
+				@include footer_sub_text;
+			}
+		}
+
+		@include respond-to('desktop') {
+			& .app-footer__top {
+				flex-direction: row;
+				align-items: flex-start;
+			}
+			.app-footer__contact,
+			.app-footer__quote {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

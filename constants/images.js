@@ -22,6 +22,7 @@ import award05 from '@public/assets/award05.png';
 import sign from '@public/assets/sign.png';
 import quote from '@public/assets/quote.png';
 import gericht from '@public/assets/gericht.png';
+import footerLogo from '@public/assets/footer-logo.svg'
 
 export default {
   bg,
@@ -47,5 +48,6 @@ export default {
   sign,
   quote,
   gericht,
+  footerLogo,
   wave
 };

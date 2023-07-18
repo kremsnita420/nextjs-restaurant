@@ -6,7 +6,7 @@ const SubHeading = ({ title, align, fontStyle }) => (
 	<div
 		className={`sub-heading ${fontStyle}`}
 		style={{ alignItems: `${align}` }}>
-		<h2 className='sub-heading__p'>{title}</h2>
+		<p>{title}</p>
 		<div className='sub-heading__img'>
 			<Image
 				src={images.spoon}

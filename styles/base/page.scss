@@ -16,14 +16,18 @@
 	}
 }
 
-.small_sub_heading h2 {
+.small_sub_heading {
 	@include small_sub_heading;
 }
 
-.large_sub_heading h2 {
+.large_sub_heading {
 	@include large_sub_heading;
 }
 
 .gold__button {
 	@include gold-button;
+}
+
+.footer_sub_heading {
+	@include footer_sub_text;
 }
