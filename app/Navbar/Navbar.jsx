@@ -55,7 +55,13 @@ const Navbar = () => {
 				visible ? 'app__navbar__visible' : 'app__navbar__hidden'
 			} app__navbar`}>
 			<div className='app__navbar-logo'>
-				<Image src={images.gericht} alt='Site logo' width={120} height={30} />
+				<Image
+					src={images.gericht}
+					placeholder='blur'
+					alt='Site logo'
+					width={120}
+					height={30}
+				/>
 			</div>
 			<ul className='app__navbar-links'>
 				<li>

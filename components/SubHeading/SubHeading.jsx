@@ -15,6 +15,7 @@ const SubHeading = ({ title, align, fontStyle }) => (
 				width={60}
 				height={12}
 				as='image'
+				loading='lazy'
 			/>
 		</div>
 	</div>

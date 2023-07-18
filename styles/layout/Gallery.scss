@@ -35,11 +35,17 @@
 			overflow-x: auto;
 			position: relative;
 
-			& img {
-				object-fit: cover;
-				margin-right: 2rem;
-				width: 100%;
-				max-height: 45rem;
+			& .swiper-wrapper {
+				& .swiper-slide {
+					max-width: 30rem;
+					max-height: 55rem;
+				}
+				& img {
+					object-fit: cover;
+					margin-right: 2rem;
+					width: 100%;
+					max-height: 45rem;
+				}
 			}
 		}
 
@@ -54,13 +60,6 @@
 				margin-right: 6rem;
 				& > p {
 					margin: 2.5rem 0;
-				}
-			}
-
-			.app-gallery__images {
-				& img {
-					// max-width: 30rem;
-					max-height: 55rem;
 				}
 			}
 		}

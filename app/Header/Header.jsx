@@ -26,7 +26,13 @@ const Header = () => (
 				</Link>
 			</div>
 			<div className='app-header__image'>
-				<Image src={images.welcome613} alt='Welcome picture' as='image' />
+				<Image
+					src={images.welcome613}
+					placeholder='blur'
+					alt='Welcome picture'
+					as='image'
+					loading='lazy'
+				/>
 			</div>
 		</div>
 		<Link className='scroll-down-link' href='#about'>

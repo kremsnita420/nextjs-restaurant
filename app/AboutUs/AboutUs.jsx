@@ -36,12 +36,16 @@ const AboutUs = () => (
 					src={images.knife}
 					alt='Knife'
 					as='image'
+					placeholder='blur'
+					loading='lazy'
 				/>
 				<Image
 					className='app-aboutus__middle__g'
 					src={images.G}
 					alt='Letter G'
 					as='image'
+					placeholder='blur'
+					loading='lazy'
 				/>
 			</div>
 			<div className='app-aboutus__right'>

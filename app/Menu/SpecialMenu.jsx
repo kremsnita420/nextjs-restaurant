@@ -35,6 +35,8 @@ const SpecialMenu = () => (
 						src={images.menu}
 						alt='Knife'
 						as='image'
+						placeholder='blur'
+						loading='lazy'
 					/>
 				</div>
 				<div className='app-special-menu__wrapper__right'>

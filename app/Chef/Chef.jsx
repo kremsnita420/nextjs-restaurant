@@ -15,7 +15,7 @@ const Chef = () => (
 		}}>
 		<div className='section__wrapper'>
 			<div className='app-chef__image'>
-				<Image src={images.chef} alt='Chef' />
+				<Image src={images.chef} placeholder='blur' alt='Chef' />
 			</div>
 			<div className='app-chef__desc'>
 				<SubHeading
@@ -27,7 +27,7 @@ const Chef = () => (
 					<h2>What we believe in</h2>
 				</div>
 				<p className='app-chef__desc__quote'>
-					<Image src={images.quote} alt='Quote' />
+					<Image src={images.quote} placeholder='blur' alt='Quote' />
 					auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit.
 					Nulla scelerisque scelerisque congue ac consequat, aliquam molestie
 					lectus eu. Congue iaculis integer curabitur semper sit nunc.
