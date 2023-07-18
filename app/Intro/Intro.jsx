@@ -16,13 +16,14 @@ const Intro = () => {
 				autoPlay={false}
 				muted
 				playsinline
+				poster={images.welcome613}
 				paused='true'
 				loop
 				width={500}
 				height={500}
 				ref={vidRef}>
 				<source src='/assets/meal.mp4' />
-				<Image src={images.bg} alt='Fallback video image' />
+				<Image src={images.welcome613} alt='Fallback video image' />
 			</video>
 			<div className='app__video-overlay'>
 				<div
