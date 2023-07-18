@@ -15,6 +15,7 @@ const Intro = () => {
 			<video
 				autoPlay={false}
 				muted
+				playsinline
 				paused='true'
 				loop
 				width={500}
