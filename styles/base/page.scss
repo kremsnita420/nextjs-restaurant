@@ -7,7 +7,6 @@
 
 	@include respond-to('tablet') {
 		padding: 6rem 6rem;
-		padding-bottom: 9rem;
 	}
 	@include respond-to('desktop') {
 		padding: 9rem 6rem;

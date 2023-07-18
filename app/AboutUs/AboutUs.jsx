@@ -38,6 +38,11 @@ const AboutUs = () => (
 					as='image'
 					placeholder='blur'
 					loading='lazy'
+					style={{
+						width: '100%',
+						height: 'auto',
+					}}
+					sizes='(max-width: 550px) 20rem, (max-width: 1200px) 20rem, 25rem'
 				/>
 				<Image
 					className='app-aboutus__middle__g'

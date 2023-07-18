@@ -31,11 +31,7 @@
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
-
-		& img {
-			width: 100px;
-			height: 30px;
-		}
+		max-width: 10rem;
 	}
 
 	&__navbar-links {
@@ -133,12 +129,8 @@
 @include respond-to('tablet') {
 	.app {
 		&__navbar-logo {
-			& img {
-				width: 150px;
-				height: 40px;
-			}
+			max-width: 15rem;
 		}
-
 		&__navbar-login {
 			margin-right: 8rem;
 		}

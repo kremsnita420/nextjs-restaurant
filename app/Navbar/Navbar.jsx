@@ -59,8 +59,11 @@ const Navbar = () => {
 					src={images.gericht}
 					placeholder='blur'
 					alt='Site logo'
-					width={120}
-					height={30}
+					style={{
+						maxWidth: '100%',
+						height: 'auto',
+					}}
+					sizes='(max-width: 550px) 8rem, (max-width: 1200px) 10rem, 12rem'
 				/>
 			</div>
 			<ul className='app__navbar-links'>
