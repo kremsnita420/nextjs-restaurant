@@ -16,6 +16,8 @@ body {
 	font-family: $font-alt;
 	line-height: 1;
 	scroll-behavior: smooth;
+	min-height: 100vh;
+	height: 100%;
 }
 main {
 	position: relative;

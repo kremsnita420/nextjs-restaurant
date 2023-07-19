@@ -1,13 +1,13 @@
 import '@styles/base/page.scss';
-import Header from './Header/Header';
-import AboutUs from './AboutUs/AboutUs';
-import SpecialMenu from './Menu/SpecialMenu';
-import Chef from './Chef/Chef';
-import Gallery from './Gallery/Gallery';
-import FindUs from './Findus/FindUs';
-import Footer from './Footer/Footer';
+import Header from '@layout/Header/Header';
+import AboutUs from '@layout/AboutUs/AboutUs';
+import SpecialMenu from '@layout/Menu/SpecialMenu';
+import Chef from '@layout/Chef/Chef';
+import Gallery from '@layout/Gallery/Gallery';
+import FindUs from '@layout/Findus/FindUs';
+import Footer from '@layout/Footer/Footer';
 import { lazy, Suspense } from 'react';
-const Intro = lazy(() => import('./Intro/Intro'));
+const Intro = lazy(() => import('@layout/Intro/Intro'));
 
 const Home = () => {
 	return (

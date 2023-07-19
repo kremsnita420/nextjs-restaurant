@@ -68,10 +68,10 @@ const Navbar = () => {
 			</div>
 			<ul className='app__navbar-links'>
 				<li>
-					<Link href='#home'>Home</Link>
+					<Link href='/'>Home</Link>
 				</li>
 				<li>
-					<Link href='#about'>About</Link>
+					<Link href='/about'>About</Link>
 				</li>
 				<li>
 					<Link href='#menu'>Menu</Link>
@@ -80,7 +80,7 @@ const Navbar = () => {
 					<Link href='#awards'>Awards</Link>
 				</li>
 				<li>
-					<Link href='#contact'>Contact</Link>
+					<Link href='/contact'>Contact</Link>
 				</li>
 			</ul>
 			<ul className='app__navbar-login'>
@@ -107,12 +107,12 @@ const Navbar = () => {
 					<div className='app__navbar-smallscreen__overlay flex__center slide-bottom'>
 						<ul className='app__navbar-smallscreen-links'>
 							<li>
-								<Link onClick={() => setToggleMenu(!toggleMenu)} href='#home'>
+								<Link onClick={() => setToggleMenu(!toggleMenu)} href='/'>
 									Home
 								</Link>
 							</li>
 							<li>
-								<Link onClick={() => setToggleMenu(!toggleMenu)} href='#about'>
+								<Link onClick={() => setToggleMenu(!toggleMenu)} href='/about'>
 									About
 								</Link>
 							</li>
@@ -129,7 +129,7 @@ const Navbar = () => {
 							<li>
 								<Link
 									onClick={() => setToggleMenu(!toggleMenu)}
-									href='#contact'>
+									href='/contact'>
 									Contact
 								</Link>
 							</li>

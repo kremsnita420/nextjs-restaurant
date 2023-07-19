@@ -6,6 +6,7 @@ import gallery01 from '@public/assets/gallery01.png';
 import gallery02 from '@public/assets/gallery02.png';
 import gallery03 from '@public/assets/gallery03.png';
 import gallery04 from '@public/assets/gallery04.png';
+import tablesLamps from '@public/assets/tables-lamps.png'
 import knife from '@public/assets/knife.png';
 import logo from '@public/assets/logo.png';
 import menu from '@public/assets/menu.png';
@@ -49,5 +50,6 @@ export default {
   quote,
   gericht,
   footerLogo,
-  wave
+  wave,
+  tablesLamps
 };

@@ -4,7 +4,6 @@ import '@styles/layout/Intro.scss';
 import { BsFillPlayFill, BsPauseFill } from 'react-icons/bs';
 
 import { useRef, useState } from 'react';
-import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
 import { images } from '@constants';
 const Intro = () => {

@@ -1,8 +1,8 @@
 import SubHeading from './SubHeading/SubHeading';
 import Newsletter from './Footer/Newsletter';
-import FooterOverlay from './Footer/FooterOverlay';
-import MenuItem from './Menuitem/MenuItem';
-import Navbar from '../app/Navbar/Navbar';
+import FooterOverlay from '@components/Footer/FooterOverlay';
+import MenuItem from '@components/Menuitem/MenuItem';
+import Navbar from '@layout/Navbar/Navbar';
 
 export {
   SubHeading,

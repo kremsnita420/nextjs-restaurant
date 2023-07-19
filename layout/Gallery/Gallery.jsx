@@ -6,14 +6,15 @@ import { images } from '@constants';
 import { SubHeading } from '@components';
 import Link from 'next/link';
 import Image from 'next/image';
-import { isMobile } from 'react-device-detect';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import Swiper core and required modules
-import { Navigation, A11y } from 'swiper/modules';
+import { Thumbs, Navigation, A11y, Virtual } from 'swiper/modules';
 // Import Swiper styles
-import 'swiper/scss';
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/thumbs';
 import { BsChevronDoubleLeft, BsChevronDoubleRight } from 'react-icons/bs';
 
 const Gallery = () => {
@@ -52,15 +53,20 @@ const Gallery = () => {
 					</Link>
 				</div>
 				<div className='app-gallery__images'>
+					{/* Main swiper */}
+
+					{/* Thumbs swiper */}
 					<Swiper
-						// install Swiper modules
-						modules={[Navigation, A11y]}
-						spaceBetween={20}
-						slidesPerView={1}
+						loop={false}
+						spaceBetween={10}
+						slidesPerView={3}
+						watchSlidesProgress
+						modules={[Navigation, Thumbs]}
 						navigation={{
 							nextEl: '.swiper-button-next',
 							prevEl: '.swiper-button-prev',
 						}}
+						className='mySwiper2'
 						breakpoints={{
 							550: {
 								slidesPerView: 2,
@@ -74,8 +80,7 @@ const Gallery = () => {
 							1440: {
 								slidesPerView: 3,
 							},
-						}}
-						className='mySwiper'>
+						}}>
 						{gallery &&
 							gallery.map((img, i) => (
 								<SwiperSlide key={`image-${i}`}>
@@ -95,10 +100,10 @@ const Gallery = () => {
 							))}
 					</Swiper>
 					<div className='custom-pagination'>
-						<button className='swiper-buttom swiper-button-prev'>
+						<button className='swiper-button swiper-button-prev'>
 							<BsChevronDoubleLeft />
 						</button>
-						<button className='swiper-buttom swiper-button-next'>
+						<button className='swiper-button swiper-button-next'>
 							<BsChevronDoubleRight />
 						</button>
 					</div>
