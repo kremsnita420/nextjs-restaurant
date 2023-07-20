@@ -5,7 +5,7 @@ import HeaderSecondary from '@layout/HeaderSecondary/HeaderSecondary';
 const AboutPage = () => {
 	return (
 		<>
-			<HeaderSecondary />
+			<HeaderSecondary path='About us' />
 			<Footer />
 		</>
 	);

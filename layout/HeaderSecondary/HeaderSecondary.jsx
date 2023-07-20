@@ -3,10 +3,10 @@ import { images } from '@constants';
 import '@styles/layout/HeaderSecondary.scss';
 import Link from 'next/link';
 import { BiSolidChevronRight } from 'react-icons/bi';
-import { usePathname } from 'next/navigation';
-function HeaderSecondary() {
-	const pathname = usePathname();
-	const path = pathname.replace('/', '').replace('-', ' ');
+// import { usePathname } from 'next/navigation';
+function HeaderSecondary({ path }) {
+	// const pathname = usePathname();
+	// const path = pathname.replace('/', '').replace('-', ' ');
 	return (
 		<div
 			className='app__hero-secondary'
