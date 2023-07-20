@@ -26,6 +26,14 @@
 			justify-content: center;
 			align-items: center;
 			max-width: 44rem;
+
+			&__social-icons {
+				margin-top: 4rem;
+				& > a {
+					padding: 1rem;
+					font-size: 4rem;
+				}
+			}
 		}
 
 		& .app-footer__logo {

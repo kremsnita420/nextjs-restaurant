@@ -2,6 +2,9 @@ import '@styles/layout/Footer.scss';
 import { images } from '@constants';
 import { SubHeading } from '@components';
 import Image from 'next/image';
+import Link from 'next/link';
+import { BiLogoFacebook, BiLogoInstagram } from 'react-icons/bi';
+import { RxTwitterLogo } from 'react-icons/rx';
 const Footer = () => (
 	<section
 		className='app-footer'
@@ -43,6 +46,26 @@ const Footer = () => (
 						fontStyle='footer_sub_heading'
 						title='"The best way to find yourself is to lose yourself in the service of others."'
 					/>
+					<div className='app-footer__quote__social-icons'>
+						<Link
+							href='https://wwww.google.com'
+							target='blank'
+							rel='noopener noreferrer'>
+							<BiLogoFacebook />
+						</Link>
+						<Link
+							href='https://wwww.google.com'
+							target='blank'
+							rel='noopener noreferrer'>
+							<RxTwitterLogo />
+						</Link>
+						<Link
+							href='https://wwww.google.com'
+							target='blank'
+							rel='noopener noreferrer'>
+							<BiLogoInstagram />
+						</Link>
+					</div>
 				</div>
 				<div className='app-footer__hours'>
 					<h4>Working hours</h4>
