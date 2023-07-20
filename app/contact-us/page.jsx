@@ -7,7 +7,7 @@ import FormSection from '@layout/FormSection/FormSection';
 const ContactPage = () => {
 	return (
 		<>
-			<HeaderSecondary path='Contact us' />
+			<HeaderSecondary />
 			{/* <Map /> */}
 			<FormSection />
 			<Footer />
