@@ -1,7 +1,5 @@
 import '@styles/components/SpecialMenuItem.scss';
 
-import React from 'react';
-
 const SpecialMenuItem = ({ title, price, tags }) => {
 	return (
 		<div className='special-menu-item'>
