@@ -1,15 +1,17 @@
-.section__wrapper {
-	& .leaflet-container {
-		max-height: 50rem;
-		border: 2px solid $color-golden;
+.app__map {
+	& .section__wrapper {
+		& .leaflet-container {
+			max-height: 50rem;
+			border: 2px solid $color-golden;
 
-		& .leaflet-shadow-pane {
-			opacity: 0;
-		}
-		& .leaflet-marker-pane {
-			& img {
-				object-fit: cover;
-				width: 100%;
+			& .leaflet-shadow-pane {
+				opacity: 0;
+			}
+			& .leaflet-marker-pane {
+				& img {
+					object-fit: cover;
+					width: 100%;
+				}
 			}
 		}
 	}

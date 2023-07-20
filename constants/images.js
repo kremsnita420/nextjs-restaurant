@@ -2,6 +2,7 @@ import bg from '@public/assets/bg.png';
 import wave from '@public/assets/wave_element.svg'
 import chef from '@public/assets/chef.png';
 import G from '@public/assets/G.png';
+import Gwhite from '@public/assets/G-white.png';
 import gallery01 from '@public/assets/gallery01.png';
 import gallery02 from '@public/assets/gallery02.png';
 import gallery03 from '@public/assets/gallery03.png';
@@ -29,6 +30,7 @@ export default {
   bg,
   chef,
   G,
+  Gwhite,
   gallery01,
   gallery02,
   gallery03,

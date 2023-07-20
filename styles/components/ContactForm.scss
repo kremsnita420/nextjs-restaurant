@@ -1,0 +1,30 @@
+.contact-form {
+	& form {
+		display: flex;
+		flex-direction: column;
+
+		& input,
+		& textarea,
+		& *::placeholder {
+			@include contact_form_field;
+		}
+
+		& *:not(button) {
+			margin-bottom: 2rem;
+			padding: 1.5rem;
+			background-color: transparent;
+			border: 1px solid $color-crimson;
+		}
+	}
+
+	@include respond-to('desktop') {
+		& form {
+			max-width: 65rem;
+			margin-left: 0;
+
+			& *:not(button) {
+				margin-bottom: 4rem;
+			}
+		}
+	}
+}

@@ -1,4 +1,4 @@
-import { Navbar } from '@components';
+import Navbar from '@layout/Navbar/Navbar';
 import { images } from '@constants';
 import '@styles/base/globals.scss';
 

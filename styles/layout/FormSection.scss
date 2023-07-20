@@ -1,0 +1,72 @@
+.app__form {
+	width: 100%;
+	& .section__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-direction: column;
+		position: relative;
+		gap: 4rem;
+
+		.app__form__form,
+		.app__form__image {
+			width: 100%;
+		}
+
+		.app__form__form {
+			margin-bottom: 4rem;
+
+			& > p {
+				@include alt-font;
+				margin-bottom: 3rem;
+			}
+		}
+		.app__form__image {
+			max-width: 40rem;
+			max-height: 70rem;
+			position: relative;
+			z-index: 2;
+			&::before,
+			&::after {
+				content: '';
+				position: absolute;
+				display: block;
+				background-color: $color-golden;
+				width: 60%;
+				height: 60%;
+
+				z-index: -1;
+			}
+
+			&::before {
+				top: -1rem;
+				left: -1rem;
+			}
+
+			&::after {
+				bottom: -1rem;
+				right: -1rem;
+			}
+
+			&__g {
+				position: absolute;
+				left: -2rem;
+				bottom: 0;
+				max-width: 40rem;
+			}
+		}
+		@include respond-to('desktop') {
+			flex-direction: row;
+
+			.app__form__form {
+				margin-bottom: 0;
+			}
+
+			.app__form__image {
+				&__g {
+					left: -5rem;
+				}
+			}
+		}
+	}
+}
