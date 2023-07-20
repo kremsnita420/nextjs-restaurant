@@ -1,8 +1,9 @@
 import { images } from '@constants';
 import '@styles/layout/HeaderSecondary.scss';
+import Link from 'next/link';
 import { BiSolidChevronRight } from 'react-icons/bi';
 
-function HeaderSecondary({ title, subtitle1, subtitle2 }) {
+function HeaderSecondary({ title, subtitle }) {
 	return (
 		<div
 			className='app__hero-secondary'
@@ -15,9 +16,9 @@ function HeaderSecondary({ title, subtitle1, subtitle2 }) {
 			<div className='section__wrapper'>
 				<h1 className='app__hero-secondary__title'>{title}</h1>
 				<p className='app__hero-secondary__subtitle'>
-					<span>Home</span>
+					<Link href='/'>Home</Link>
 					<BiSolidChevronRight className='app__hero-secondary__subtitle__arrow' />
-					<span>{subtitle1}</span>
+					<span>{subtitle}</span>
 				</p>
 			</div>
 		</div>

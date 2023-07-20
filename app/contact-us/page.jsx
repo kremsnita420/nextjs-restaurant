@@ -3,16 +3,18 @@ import '@styles/base/page.scss';
 import { usePathname } from 'next/navigation';
 import Footer from '@layout/Footer/Footer';
 import HeaderSecondary from '@layout/HeaderSecondary/HeaderSecondary';
+import About from '@app/about-us/page';
+import AboutUs from '@layout/AboutUs/AboutUs';
 
-const About = () => {
+const Contact = () => {
 	const pathname = usePathname();
-	const path = pathname.replace('/', '');
-	const title = 'About us';
+	const path = pathname.replace('/', '').replace('-', ' ');
+
 	return (
 		<>
-			<HeaderSecondary title={title} subtitle1={path} />
+			<HeaderSecondary title={path} subtitle={path} />
 			<Footer />
 		</>
 	);
 };
-export default About;
+export default Contact;

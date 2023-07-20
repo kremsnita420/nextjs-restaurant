@@ -54,7 +54,7 @@ const Navbar = () => {
 			className={`${
 				visible ? 'app__navbar__visible' : 'app__navbar__hidden'
 			} app__navbar`}>
-			<div className='app__navbar-logo'>
+			<Link href='/' className='app__navbar-logo'>
 				<Image
 					src={images.gericht}
 					placeholder='blur'
@@ -65,13 +65,13 @@ const Navbar = () => {
 					}}
 					sizes='(max-width: 550px) 8rem, (max-width: 1200px) 10rem, 12rem'
 				/>
-			</div>
+			</Link>
 			<ul className='app__navbar-links'>
 				<li>
 					<Link href='/'>Home</Link>
 				</li>
 				<li>
-					<Link href='/about'>About</Link>
+					<Link href='/about-us'>About</Link>
 				</li>
 				<li>
 					<Link href='#menu'>Menu</Link>
@@ -80,7 +80,7 @@ const Navbar = () => {
 					<Link href='#awards'>Awards</Link>
 				</li>
 				<li>
-					<Link href='/contact'>Contact</Link>
+					<Link href='/contact-us'>Contact</Link>
 				</li>
 			</ul>
 			<ul className='app__navbar-login'>
@@ -112,7 +112,9 @@ const Navbar = () => {
 								</Link>
 							</li>
 							<li>
-								<Link onClick={() => setToggleMenu(!toggleMenu)} href='/about'>
+								<Link
+									onClick={() => setToggleMenu(!toggleMenu)}
+									href='/about-us'>
 									About
 								</Link>
 							</li>
@@ -129,7 +131,7 @@ const Navbar = () => {
 							<li>
 								<Link
 									onClick={() => setToggleMenu(!toggleMenu)}
-									href='/contact'>
+									href='/contact-us'>
 									Contact
 								</Link>
 							</li>

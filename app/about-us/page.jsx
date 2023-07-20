@@ -4,15 +4,15 @@ import { usePathname } from 'next/navigation';
 import Footer from '@layout/Footer/Footer';
 import HeaderSecondary from '@layout/HeaderSecondary/HeaderSecondary';
 
-const Contact = () => {
+const About = () => {
 	const pathname = usePathname();
-	const path = pathname.replace('/', '');
-	const title = 'Contact us';
+	const path = pathname.replace('/', '').replace('-', ' ');
+
 	return (
 		<>
-			<HeaderSecondary title={title} subtitle1={path} />
+			<HeaderSecondary title={path} subtitle={path} />
 			<Footer />
 		</>
 	);
 };
-export default Contact;
+export default About;
