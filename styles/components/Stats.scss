@@ -1,0 +1,57 @@
+.stats-component {
+	margin-bottom: 4rem;
+	& .stats_large {
+		margin: 2rem 0;
+	}
+	&__numbers {
+		display: flex;
+		justify-content: space-between;
+
+		& > div {
+			flex: 1;
+			&:nth-child(1) {
+				padding-right: 1.6rem;
+			}
+			&:nth-child(2) {
+				padding: 0 1.6rem;
+			}
+			&:nth-child(3) {
+				padding-left: 1.6rem;
+			}
+			& > p {
+				@include stats_small;
+			}
+
+			&:not(:first-of-type) {
+				position: relative;
+
+				&::before {
+					position: absolute;
+					content: '';
+					background-color: $color-grey;
+					left: -1.6rem;
+					top: 50%;
+					transform: translateY(-50%);
+					width: 2px;
+					height: 60%;
+				}
+			}
+		}
+	}
+
+	@include respond-to('desktop') {
+		&__numbers {
+			& > div {
+				&:nth-child(1) {
+					padding-right: 3.2rem;
+				}
+				&:nth-child(2) {
+					padding: 0 3.2rem;
+				}
+				&:nth-child(3) {
+					padding-left: 3.2rem;
+				}
+			}
+		}
+	}
+}

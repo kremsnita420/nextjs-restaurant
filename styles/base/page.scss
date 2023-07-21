@@ -32,6 +32,11 @@
 	@include footer_sub_text;
 }
 
-h2 {
+.stats_large {
+	@include stats_large;
+}
+
+h2,
+h3 {
 	font-weight: 400;
 }

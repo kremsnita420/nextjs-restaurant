@@ -25,6 +25,8 @@ import sign from '@public/assets/sign.png';
 import quote from '@public/assets/quote.png';
 import gericht from '@public/assets/gericht.png';
 import footerLogo from '@public/assets/footer-logo.svg'
+import trattoria from '@public/assets/trattoria.png';
+import trattoria2 from '@public/assets/trattoria-2.png';
 
 export default {
   bg,
@@ -53,5 +55,7 @@ export default {
   gericht,
   footerLogo,
   wave,
-  tablesLamps
+  tablesLamps,
+  trattoria,
+  trattoria2
 };

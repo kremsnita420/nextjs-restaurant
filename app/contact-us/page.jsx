@@ -13,7 +13,7 @@ const ContactPage = () => {
 	);
 	return (
 		<>
-			<HeaderSecondary />
+			<HeaderSecondary title='Contact us' />
 			<Map />
 			<FormSection />
 

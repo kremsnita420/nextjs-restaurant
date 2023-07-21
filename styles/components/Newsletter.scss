@@ -10,7 +10,7 @@
 		&__inline {
 			border: 1px solid $color-grey;
 			width: 100%;
-			padding: 6rem 2rem;
+			padding: 2rem 2rem;
 			background-color: $color-black;
 		}
 
@@ -43,13 +43,16 @@
 	@include respond-to('tablet') {
 		& .section__wrapper {
 			&__inline {
-				padding: 6rem 3rem;
+				padding: 4rem 2rem;
 			}
 		}
 	}
 
 	@include respond-to('desktop') {
 		& .section__wrapper {
+			&__inline {
+				padding: 6rem 3rem;
+			}
 			& .app__newsletter__content {
 				& .app__newsletter__form {
 					flex-direction: row;

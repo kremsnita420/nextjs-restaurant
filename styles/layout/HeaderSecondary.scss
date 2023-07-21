@@ -7,7 +7,7 @@
 		align-items: center;
 		justify-content: center;
 		min-height: 50vh;
-		max-width: 45rem;
+
 		& .app__hero-secondary__title {
 			@include header-heading;
 			margin-bottom: 2rem;
