@@ -24,10 +24,10 @@ const Footer = () => (
 						<span>+1 212-344-1230</span>
 						<span> +1 212-555-1230</span>
 					</p>
-					<a href='mailto:abc@example.com?subject = Feedback&body = Message'>
+					<Link href='mailto:abc@example.com?subject=Feedback&body=Message'>
 						<span>Send Email to </span>
 						<span>abc@example.com</span>
-					</a>
+					</Link>
 				</div>
 				<div className='app-footer__quote'>
 					<div className='app-footer__logo'>

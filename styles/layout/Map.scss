@@ -13,6 +13,19 @@
 					width: 100%;
 				}
 			}
+
+			& .leaflet-popup-pane {
+				font-size: 1.4rem;
+				font-family: $font-alt;
+			}
+		}
+
+		@include respond-to('desktop') {
+			& .leaflet-container {
+				& .leaflet-popup-pane {
+					font-size: 1.6rem;
+				}
+			}
 		}
 	}
 }

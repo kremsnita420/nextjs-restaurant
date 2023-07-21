@@ -2,6 +2,7 @@
 import '@styles/layout/Map.scss';
 
 import 'leaflet/dist/leaflet.css';
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 
@@ -29,7 +30,14 @@ const Map = () => {
 						{lat && lng && (
 							<Marker position={[lat, lng]}>
 								<Popup>
-									A pretty CSS3 popup. <br /> Easily customizable.
+									Get directions with link below
+									<br />
+									<Link
+										href='https://goo.gl/maps/3SNxCf1WybtvTrAe8'
+										target='blank'
+										rel='noopener noreferrer'>
+										<strong>Open map</strong>
+									</Link>
 								</Popup>
 							</Marker>
 						)}
