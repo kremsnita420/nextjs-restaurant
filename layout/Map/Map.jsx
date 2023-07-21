@@ -2,14 +2,20 @@
 import '@styles/layout/Map.scss';
 
 import 'leaflet/dist/leaflet.css';
+import { useEffect, useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 
-export default function Map() {
+const Map = () => {
 	const lat = 46.043809191289355;
 	const lng = 14.580849753458784;
-	const isBrowser = () => typeof window !== 'undefined';
-	if (isBrowser()) {
-		return (
+	const [isMounted, setIsMounted] = useState(false);
+
+	useEffect(() => {
+		setIsMounted(true);
+	}, []);
+
+	return (
+		isMounted && (
 			<section className='app__map'>
 				<div className='section__wrapper'>
 					<MapContainer
@@ -30,6 +36,8 @@ export default function Map() {
 					</MapContainer>
 				</div>
 			</section>
-		);
-	}
-}
+		)
+	);
+};
+
+export default Map;
