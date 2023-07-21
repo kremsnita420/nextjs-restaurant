@@ -8,7 +8,7 @@ const ContactPage = () => {
 	return (
 		<>
 			<HeaderSecondary />
-			{/* <Map /> */}
+			<Map />
 			<FormSection />
 			<Footer />
 		</>

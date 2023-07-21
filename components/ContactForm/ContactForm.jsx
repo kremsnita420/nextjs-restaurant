@@ -18,7 +18,8 @@ const ContactForm = () => {
 					id='text-area'
 					cols='30'
 					placeholder='Message'
-					rows='10'></textarea>
+					rows='10'
+				/>
 				<button className='gold__button' type='submit'>
 					Submit
 				</button>
