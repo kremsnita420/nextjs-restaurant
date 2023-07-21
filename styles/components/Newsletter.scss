@@ -1,0 +1,60 @@
+.app__newsletter {
+	max-height: 35rem;
+	& .section__wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+
+		&__inline {
+			border: 1px solid $color-grey;
+			width: 100%;
+			padding: 6rem 2rem;
+			background-color: $color-black;
+		}
+
+		& .app__newsletter__content {
+			max-width: 78rem;
+			margin-inline: auto;
+			& .app__newsletter__p {
+				@include p_text(center);
+				margin-bottom: 4rem;
+			}
+
+			& .app__newsletter__form {
+				display: flex;
+				flex-direction: column;
+				gap: 3rem;
+				& input,
+				& input::placeholder {
+					@include contact_form_field;
+				}
+				& .app__newsletter__form__email {
+					padding: 1.5rem;
+					width: 100%;
+					background-color: transparent;
+					border: 1px solid $color-crimson;
+				}
+			}
+		}
+	}
+
+	@include respond-to('tablet') {
+		& .section__wrapper {
+			&__inline {
+				padding: 6rem 3rem;
+			}
+		}
+	}
+
+	@include respond-to('desktop') {
+		& .section__wrapper {
+			& .app__newsletter__content {
+				& .app__newsletter__form {
+					flex-direction: row;
+				}
+			}
+		}
+	}
+}

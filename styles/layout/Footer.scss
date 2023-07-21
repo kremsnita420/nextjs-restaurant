@@ -1,4 +1,5 @@
 .app-footer {
+	padding-top: 15rem;
 	& .section__wrapper {
 		display: flex;
 		align-items: center;
@@ -28,7 +29,7 @@
 			max-width: 44rem;
 
 			&__social-icons {
-				margin-top: 4rem;
+				margin-top: 2rem;
 				& > a {
 					padding: 1rem;
 					font-size: 4rem;
@@ -77,8 +78,13 @@
 				@include footer_sub_text;
 			}
 		}
-
-		@include respond-to('desktop') {
+	}
+	@include respond-to('tablet') {
+		padding-top: 25rem;
+	}
+	@include respond-to('desktop') {
+		padding-top: 15rem;
+		& .section__wrapper {
 			& .app-footer__top {
 				flex-direction: row;
 				align-items: flex-start;

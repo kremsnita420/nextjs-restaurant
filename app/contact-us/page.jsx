@@ -16,6 +16,7 @@ const ContactPage = () => {
 			<HeaderSecondary />
 			<Map />
 			<FormSection />
+
 			<Footer />
 		</>
 	);

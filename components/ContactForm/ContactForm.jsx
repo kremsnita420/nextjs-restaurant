@@ -11,7 +11,13 @@ const ContactForm = () => {
 					name='first'
 					placeholder='Name'
 				/>
-				<input required type='text' id='last' name='last' placeholder='Email' />
+				<input
+					required
+					type='email'
+					id='last'
+					name='last'
+					placeholder='Email'
+				/>
 				<textarea
 					required
 					name='text-area'
