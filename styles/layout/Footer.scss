@@ -33,6 +33,11 @@
 				& > a {
 					padding: 1rem;
 					font-size: 4rem;
+					transition: color 0.3s ease;
+
+					&:hover {
+						color: $color-golden;
+					}
 				}
 			}
 		}

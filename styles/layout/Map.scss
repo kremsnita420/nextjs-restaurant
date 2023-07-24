@@ -1,5 +1,6 @@
 .app__map {
 	& .section__wrapper {
+		text-align: center;
 		& .leaflet-container {
 			max-height: 50rem;
 			border: 2px solid $color-golden;

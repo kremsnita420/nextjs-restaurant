@@ -19,7 +19,7 @@ const Chef = () => (
 			</div>
 			<div className='app-chef__desc'>
 				<SubHeading
-					title='About us'
+					title="Chef's word"
 					align='flex-start'
 					fontStyle='small_sub_heading'
 				/>
@@ -31,6 +31,10 @@ const Chef = () => (
 					auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit.
 					Nulla scelerisque scelerisque congue ac consequat, aliquam molestie
 					lectus eu. Congue iaculis integer curabitur semper sit nunc.
+				</p>
+				<p className='app-chef__desc__chef'>
+					<span className='app-chef__desc__chef__name'>Kevin Smith</span>
+					<span className='app-chef__desc__chef__title'>Main chef</span>
 				</p>
 			</div>
 		</div>

@@ -52,6 +52,21 @@
 			margin: 4rem auto;
 			&__quote {
 				@include chef_quote;
+				margin-bottom: 4rem;
+			}
+
+			&__chef {
+				& span {
+					display: block;
+				}
+
+				&__name {
+					@include chef_name;
+				}
+
+				&__title {
+					@include p_text(left);
+				}
 			}
 		}
 
@@ -60,6 +75,13 @@
 
 			.app-chef__image {
 				transform: translateX(1rem);
+			}
+			.app-chef__desc {
+				margin: 4rem auto;
+				&__quote {
+					@include chef_quote;
+					margin-bottom: 6rem;
+				}
 			}
 		}
 	}

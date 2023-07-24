@@ -1,4 +1,5 @@
 'use client';
+import { SubHeading } from '@components';
 import '@styles/layout/Map.scss';
 
 import 'leaflet/dist/leaflet.css';
@@ -19,6 +20,14 @@ const Map = () => {
 		isMounted && (
 			<section className='app__map'>
 				<div className='section__wrapper'>
+					<SubHeading
+						title='Location'
+						align='center'
+						fontStyle='small_sub_heading'
+					/>
+					<div className='large_sub_heading'>
+						<h2>You will find us at this location</h2>
+					</div>
 					<MapContainer
 						center={[lat, lng]}
 						zoom={14}

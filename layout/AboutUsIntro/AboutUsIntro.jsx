@@ -1,9 +1,9 @@
-import '@styles/layout/AboutUs.scss';
+import '@styles/layout/AboutUsIntro.scss';
 import Image from 'next/image';
 import { images } from '@constants';
 import { SubHeading } from '@components';
 import Link from 'next/link';
-const AboutUs = () => (
+const AboutUsIntro = () => (
 	<section
 		className='app-aboutus'
 		style={{
@@ -72,4 +72,4 @@ const AboutUs = () => (
 	</section>
 );
 
-export default AboutUs;
+export default AboutUsIntro;
