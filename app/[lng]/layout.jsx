@@ -1,8 +1,11 @@
 import Navbar from '@layout/Navbar/Navbar';
 import { images } from '@constants';
 import '@styles/base/globals.scss';
-
 import { Poppins, Lobster } from 'next/font/google';
+
+import { dir } from 'i18next';
+
+const languages = ['en', 'de'];
 
 export const poppins = Poppins({
 	weight: ['400', '700'],
@@ -38,9 +41,9 @@ export const metadata = {
 	},
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children, params: { lng } }) {
 	return (
-		<html lang='en'>
+		<html lang={lng} dir={dir(lng)}>
 			<body
 				className={`${lobster.variable} ${poppins.variable}`}
 				style={{

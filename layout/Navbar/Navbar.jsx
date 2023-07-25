@@ -6,6 +6,7 @@ import { MdRestaurantMenu } from 'react-icons/md';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import { LanguageSwitcher } from '@components/LanguageSwitcher/LanguageSwitcher';
 
 const Navbar = () => {
 	const [toggleMenu, setToggleMenu] = useState(false);
@@ -83,13 +84,12 @@ const Navbar = () => {
 					<Link href='/contact-us'>Contact</Link>
 				</li>
 			</ul>
-			<ul className='app__navbar-login'>
+
+			{/* LNG switcher */}
+
+			<ul className='app__navbar-language'>
 				<li>
-					<Link href='#login'>Language</Link>
-				</li>
-				<div />
-				<li>
-					<Link href='#book'>Book Table</Link>
+					<LanguageSwitcher />
 				</li>
 			</ul>
 			<div className='app__navbar-smallscreen'>
