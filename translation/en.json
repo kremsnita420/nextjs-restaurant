@@ -1,0 +1,21 @@
+{
+	"meta-data": {
+		"title": "Restaurant Gericht",
+		"description": "An amazing classy restaurant that serves authentic food."
+	},
+	"navbar": {
+		"home": "Home",
+		"about": "About",
+		"menu": "Menu",
+		"contact": "Contact Us"
+	},
+	"home": {
+		"title": "Home"
+	},
+	"about": {
+		"title": "About Us"
+	},
+	"contact": {
+		"title": "Contact Us"
+	}
+}

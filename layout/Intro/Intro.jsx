@@ -1,5 +1,5 @@
 import '@styles/layout/Intro.scss';
-import VideoComponent from '@components/VideoComponent/VideoComponent';
+import { VideoComponent } from '@components';
 
 const Intro = () => {
 	return (

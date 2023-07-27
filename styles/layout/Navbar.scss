@@ -46,19 +46,8 @@
 	}
 
 	&__navbar-language {
-		display: flex;
-		justify-content: flex-end;
-		align-items: center;
-
-		& a {
-			@include desktop-nav-link;
-		}
-
-		& > div {
-			width: 1px;
-			height: 30px;
-			background-color: $color-grey;
-		}
+		margin-right: 8rem;
+		margin-left: auto;
 	}
 
 	&__navbar-smallscreen {
@@ -75,7 +64,7 @@
 			z-index: 10;
 			cursor: pointer;
 			position: absolute;
-			top: 2rem;
+			top: 1.5rem;
 			right: 2rem;
 
 			& .line {
@@ -131,9 +120,7 @@
 		&__navbar-logo {
 			max-width: 15rem;
 		}
-		&__navbar-language {
-			margin-right: 8rem;
-		}
+
 		&__navbar-smallscreen {
 			&__hamburger {
 				width: 3.4rem;

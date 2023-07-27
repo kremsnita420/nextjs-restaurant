@@ -5,6 +5,15 @@ import History from '@layout/History/History';
 import AboutUsVideo from '@layout/AboutUsVideo/AboutUsVideo';
 import Chef from '@layout/Chef/Chef';
 import Gallery from '@layout/Gallery/Gallery';
+import { getTranslator } from 'next-intl/server';
+
+export async function generateMetadata({ params: { locale } }) {
+	const t = await getTranslator(locale, 'about');
+
+	return {
+		title: t('title'),
+	};
+}
 
 const AboutPage = () => {
 	return (

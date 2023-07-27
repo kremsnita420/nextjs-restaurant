@@ -5,6 +5,15 @@ import HeaderSecondary from '@layout/HeaderSecondary/HeaderSecondary';
 import FormSection from '@layout/FormSection/FormSection';
 import { useMemo } from 'react';
 import dynamic from 'next/dynamic';
+import { getTranslator } from 'next-intl/server';
+
+export async function generateMetadata({ params: { locale } }) {
+	const t = await getTranslator(locale, 'contact');
+
+	return {
+		title: t('title'),
+	};
+}
 
 const ContactPage = () => {
 	const Map = useMemo(

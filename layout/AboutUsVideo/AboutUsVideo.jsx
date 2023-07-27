@@ -1,6 +1,6 @@
 import '@styles/layout/AboutUsVideo.scss';
 import { SubHeading } from '@components';
-import VideoComponent from '@components/VideoComponent/VideoComponent';
+import { VideoComponent } from '@components';
 
 const AboutUsVideo = () => {
 	return (

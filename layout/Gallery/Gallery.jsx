@@ -10,7 +10,7 @@ import Image from 'next/image';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import Swiper core and required modules
-import { Thumbs, Navigation, A11y, Virtual } from 'swiper/modules';
+import { Thumbs, Navigation, A11y } from 'swiper/modules';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/free-mode';
@@ -61,7 +61,7 @@ const Gallery = () => {
 						spaceBetween={10}
 						slidesPerView={3}
 						watchSlidesProgress
-						modules={[Navigation, Thumbs]}
+						modules={[Navigation, Thumbs, A11y]}
 						navigation={{
 							nextEl: '.swiper-button-next',
 							prevEl: '.swiper-button-prev',

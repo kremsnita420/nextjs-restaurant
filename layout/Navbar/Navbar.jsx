@@ -1,16 +1,13 @@
 'use client';
 import '@styles/layout/Navbar.scss';
 import images from '@constants/images';
-import { GiHamburgerMenu } from 'react-icons/gi';
-import { MdRestaurantMenu } from 'react-icons/md';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import { LanguageSwitcher } from '@components/LanguageSwitcher/LanguageSwitcher';
+import LanguageSwitcher from '@components/LanguageSwitcher/LanguageSwitcher';
 
-const Navbar = () => {
+const Navbar = ({ home, contact, about, menu }) => {
 	const [toggleMenu, setToggleMenu] = useState(false);
-
 	const [prevScrollPos, setPrevScrollPos] = useState(0);
 	const [visible, setVisible] = useState(true);
 
@@ -69,29 +66,22 @@ const Navbar = () => {
 			</Link>
 			<ul className='app__navbar-links'>
 				<li>
-					<Link href='/'>Home</Link>
+					<Link href='/'>{home}</Link>
 				</li>
 				<li>
-					<Link href='/about-us'>About</Link>
+					<Link href={`/about-us`}>{about}</Link>
 				</li>
 				<li>
-					<Link href='#menu'>Menu</Link>
+					<Link href='/#menu'>{menu}</Link>
 				</li>
+
 				<li>
-					<Link href='#awards'>Awards</Link>
-				</li>
-				<li>
-					<Link href='/contact-us'>Contact</Link>
+					<Link href='/contact-us'>{contact}</Link>
 				</li>
 			</ul>
-
-			{/* LNG switcher */}
-
-			<ul className='app__navbar-language'>
-				<li>
-					<LanguageSwitcher />
-				</li>
-			</ul>
+			<div className='app__navbar-language'>
+				<LanguageSwitcher />
+			</div>
 			<div className='app__navbar-smallscreen'>
 				<div
 					className={`app__navbar-smallscreen__hamburger ${
@@ -104,7 +94,7 @@ const Navbar = () => {
 				</div>
 
 				{toggleMenu && (
-					<div className='app__navbar-smallscreen__overlay flex__center slide-bottom'>
+					<div className='app__navbar-smallscreen__overlay slide-bottom'>
 						<ul className='app__navbar-smallscreen-links'>
 							<li>
 								<Link onClick={() => setToggleMenu(!toggleMenu)} href='/'>
@@ -119,15 +109,11 @@ const Navbar = () => {
 								</Link>
 							</li>
 							<li>
-								<Link onClick={() => setToggleMenu(!toggleMenu)} href='#menu'>
+								<Link onClick={() => setToggleMenu(!toggleMenu)} href='/#menu'>
 									Menu
 								</Link>
 							</li>
-							<li>
-								<Link onClick={() => setToggleMenu(!toggleMenu)} href='#awards'>
-									Awards
-								</Link>
-							</li>
+
 							<li>
 								<Link
 									onClick={() => setToggleMenu(!toggleMenu)}

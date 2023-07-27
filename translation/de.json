@@ -1,0 +1,21 @@
+{
+	"meta-data": {
+		"title": "Restaurant Gericht",
+		"description": "Ein fantastisches, stilvolles Restaurant, das authentisches Essen serviert."
+	},
+	"navbar": {
+		"home": "Startseite",
+		"about": "Über uns",
+		"menu": "Speisekarte",
+		"contact": "Kontaktiere uns"
+	},
+	"home": {
+		"title": "Startseite"
+	},
+	"about": {
+		"title": "Über uns"
+	},
+	"contact": {
+		"title": "Kontaktiere uns"
+	}
+}

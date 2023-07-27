@@ -1,16 +1,21 @@
 import SubHeading from './SubHeading/SubHeading';
 import Newsletter from './Newsletter/Newsletter';
-import FooterOverlay from '@components/Footer/FooterOverlay';
 import MenuItem from '@components/Menuitem/MenuItem';
 import ContactForm from '@components/ContactForm/ContactForm';
-import Stats from './Stats/Stats';
+import Stats from '@components/Stats/Stats';
+import LanguageSwitcher from '@components/LanguageSwitcher/LanguageSwitcher';
+import SpecialMenuItem from '@components/SpecialMenuItem/SpecialMenuItem'
+import VideoComponent from '@components/VideoComponent/VideoComponent'
 
 
 export {
   SubHeading,
   Newsletter,
-  FooterOverlay,
   MenuItem,
   ContactForm,
-  Stats
+  Stats,
+  LanguageSwitcher,
+  SpecialMenuItem,
+  VideoComponent,
+
 };

@@ -4,7 +4,7 @@ import { data } from '@constants';
 import { images } from '@constants';
 import Link from 'next/link';
 import Image from 'next/image';
-import SpecialMenuItem from '@components/SpecialMenuItem/SpecialMenuItem';
+import { SpecialMenuItem } from '@components';
 
 const SpecialMenu = () => (
 	<section className='app-special-menu' id='menu'>

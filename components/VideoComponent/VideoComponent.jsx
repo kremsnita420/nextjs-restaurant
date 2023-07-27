@@ -5,6 +5,7 @@ import { BsFillPlayFill, BsPauseFill } from 'react-icons/bs';
 import { useRef, useState } from 'react';
 import Image from 'next/image';
 import { images } from '@constants';
+
 const VideoComponent = ({ videoSrc }) => {
 	const [playVideo, setPlayVideo] = useState(false);
 	const vidRef = useRef();

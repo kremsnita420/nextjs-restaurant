@@ -7,6 +7,15 @@ import Gallery from '@layout/Gallery/Gallery';
 import Footer from '@layout/Footer/Footer';
 import { lazy, Suspense } from 'react';
 const Intro = lazy(() => import('@layout/Intro/Intro'));
+import { getTranslator } from 'next-intl/server';
+
+export async function generateMetadata({ params: { locale } }) {
+	const t = await getTranslator(locale, 'home');
+
+	return {
+		title: t('title'),
+	};
+}
 
 const Home = () => {
 	return (

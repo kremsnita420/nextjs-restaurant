@@ -1,18 +1,23 @@
-/* eslint-disable react-hooks/rules-of-hooks */
+import '@styles/components/LanguageSwitcher.scss';
+import Link from 'next-intl/link';
+import Image from 'next/image';
+import { images } from '@constants';
 
-import Link from 'next/link';
-import { languages } from '@app/i18n/settings';
-export const LanguageSwitcher = () => {
+const LanguageSwitcher = () => {
 	return (
-		<div>
-			{languages.map((l, index) => {
-				return (
-					<span key={l}>
-						{index > 0 && ' / '}
-						<Link href={`/${l}`}>{l}</Link>
-					</span>
-				);
-			})}
-		</div>
+		<ul className='language-switcher'>
+			<li>
+				<Link href='/' locale='de'>
+					<Image width={33} height={33} src={images.DE} alt='German' />
+				</Link>
+			</li>
+			<li>
+				<Link href='/' locale='en'>
+					<Image width={33} height={33} src={images.UK} alt='English' />
+				</Link>
+			</li>
+		</ul>
 	);
 };
+
+export default LanguageSwitcher;
