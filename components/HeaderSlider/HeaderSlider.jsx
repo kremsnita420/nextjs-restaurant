@@ -26,6 +26,10 @@ const HeaderSlider = ({ data }) => {
 				pagination={{
 					clickable: true,
 				}}
+				navigation={{
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				}}
 				modules={[Navigation, A11y, Autoplay, Pagination]}
 				className='mySwiper3'>
 				{data.map((slide, i) => (
