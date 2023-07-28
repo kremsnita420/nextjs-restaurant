@@ -30,7 +30,7 @@ export async function generateMetadata({ params: { locale } }) {
 		},
 		description: t('description'),
 		icons: {
-			icon: '/spoon.svg',
+			icon: '/assets/spoon.svg',
 		},
 		openGraph: {
 			title: t('title'),
@@ -92,10 +92,12 @@ export default function RootLayout({ children, params }) {
 				suppressHydrationWarning={true}>
 				<main>
 					<Navbar
+						navSiteLogoAlt={t('nav-site-logo-alt')}
 						home={t('home')}
 						about={t('about')}
 						menu={t('menu')}
 						contact={t('contact')}
+						langFlag={t('lang-switch-flag')}
 					/>
 					{children}
 				</main>

@@ -7,10 +7,18 @@
 		"home": "Home",
 		"about": "About",
 		"menu": "Menu",
-		"contact": "Contact Us"
+		"contact": "Contact Us",
+		"nav-site-logo-alt": "Website logo",
+		"lang-switch-flag": "Language flag"
 	},
 	"home": {
-		"title": "Home"
+		"title": "Home",
+		"scroll-button": "Scroll",
+		"about-us-about-title": "About us",
+		"about-us-about-desc": "No Italian dining experience is complete without the perfect wine pairing to complement your meal. Our restaurant boasts an extensive selection of exquisite Italian wines sourced from various regions across Italy.",
+		"about-us-history-title": "History",
+		"about-us-history-desc": "Step into our Italian oasis where you'll be embraced by a warm and inviting ambiance that echoes the spirit of Italy's famed hospitality. The restaurant's decor is inspired by the rustic charm of Italian countryside settings, featuring exposed brick walls, cozy wooden tables, and soft, ambient lighting.",
+		"read-more": "Read mor"
 	},
 	"about": {
 		"title": "About Us"

@@ -2,11 +2,10 @@
 import '@styles/layout/Navbar.scss';
 import images from '@constants/images';
 import Image from 'next/image';
-import Link from 'next/link';
+import Link from 'next-intl/link';
 import { useEffect, useState } from 'react';
-import LanguageSwitcher from '@components/LanguageSwitcher/LanguageSwitcher';
 
-const Navbar = ({ home, contact, about, menu }) => {
+const Navbar = ({ home, contact, about, menu, navSiteLogoAlt, langFlag }) => {
 	const [toggleMenu, setToggleMenu] = useState(false);
 	const [prevScrollPos, setPrevScrollPos] = useState(0);
 	const [visible, setVisible] = useState(true);
@@ -56,7 +55,7 @@ const Navbar = ({ home, contact, about, menu }) => {
 				<Image
 					src={images.gericht}
 					placeholder='blur'
-					alt='Site logo'
+					alt={navSiteLogoAlt}
 					style={{
 						maxWidth: '100%',
 						height: 'auto',
@@ -80,7 +79,18 @@ const Navbar = ({ home, contact, about, menu }) => {
 				</li>
 			</ul>
 			<div className='app__navbar-language'>
-				<LanguageSwitcher />
+				<ul className='language-switcher'>
+					<li>
+						<Link href='/' locale='de'>
+							<Image width={33} height={33} src={images.DE} alt={langFlag} />
+						</Link>
+					</li>
+					<li>
+						<Link href='/' locale='en'>
+							<Image width={33} height={33} src={images.UK} alt={langFlag} />
+						</Link>
+					</li>
+				</ul>
 			</div>
 			<div className='app__navbar-smallscreen'>
 				<div
@@ -98,19 +108,19 @@ const Navbar = ({ home, contact, about, menu }) => {
 						<ul className='app__navbar-smallscreen-links'>
 							<li>
 								<Link onClick={() => setToggleMenu(!toggleMenu)} href='/'>
-									Home
+									{home}
 								</Link>
 							</li>
 							<li>
 								<Link
 									onClick={() => setToggleMenu(!toggleMenu)}
 									href='/about-us'>
-									About
+									{about}
 								</Link>
 							</li>
 							<li>
 								<Link onClick={() => setToggleMenu(!toggleMenu)} href='/#menu'>
-									Menu
+									{menu}
 								</Link>
 							</li>
 
@@ -118,7 +128,7 @@ const Navbar = ({ home, contact, about, menu }) => {
 								<Link
 									onClick={() => setToggleMenu(!toggleMenu)}
 									href='/contact-us'>
-									Contact
+									{contact}
 								</Link>
 							</li>
 						</ul>

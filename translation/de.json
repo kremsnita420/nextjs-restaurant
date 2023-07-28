@@ -7,10 +7,18 @@
 		"home": "Startseite",
 		"about": "Über uns",
 		"menu": "Speisekarte",
-		"contact": "Kontaktiere uns"
+		"contact": "Kontaktiere uns",
+		"nav-site-logo-alt": "Website-Logo",
+		"lang-switch-flag": "Sprachflagge"
 	},
 	"home": {
-		"title": "Startseite"
+		"title": "Startseite",
+		"scroll-button": "Scrollen",
+		"about-us-about-title": "Über uns",
+		"about-us-about-desc": "Kein italienisches kulinarisches Erlebnis ist vollständig ohne die perfekte Weinbegleitung als Ergänzung zu Ihrer Mahlzeit. Unser Restaurant verfügt über eine umfangreiche Auswahl an erlesenen italienischen Weinen aus verschiedenen Regionen Italiens.",
+		"about-us-history-title": "Geschichte",
+		"about-us-history-desc": "Treten Sie ein in unsere italienische Oase, wo Sie von einem warmen und einladenden Ambiente umarmt werden, das den Geist der berühmten italienischen Gastfreundschaft widerspiegelt. Die Einrichtung des Restaurants ist vom rustikalen Charme der italienischen Landschaft inspiriert und verfügt über freiliegende Ziegelwände, gemütliche Holztische und sanfte, stimmungsvolle Beleuchtung.",
+		"read-more": "Weiterlesen"
 	},
 	"about": {
 		"title": "Über uns"

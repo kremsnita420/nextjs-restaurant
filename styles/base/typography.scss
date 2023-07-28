@@ -50,12 +50,10 @@
 
 	@include respond-to('tablet') {
 		font-size: 3.6rem;
-		margin-bottom: 4rem;
 	}
 
 	@include respond-to('desktop') {
 		font-size: 4.4rem;
-		margin-bottom: 4rem;
 	}
 }
 
@@ -93,16 +91,16 @@
 	color: $color-golden;
 	letter-spacing: 0.04em;
 	line-height: 1.2;
-	font-size: 4rem;
+	font-size: 3.5rem;
 	font-weight: 400;
 	text-transform: capitalize;
 
 	@include respond-to('mobile') {
-		font-size: 6rem;
+		font-size: 5rem;
 	}
 
 	@include respond-to('tablet') {
-		font-size: 7rem;
+		font-size: 6rem;
 	}
 
 	@include respond-to('x-large-desktop') {
