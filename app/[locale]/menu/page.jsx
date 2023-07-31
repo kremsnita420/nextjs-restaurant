@@ -1,15 +1,12 @@
 import '@styles/base/page.scss';
 import Footer from '@layout/Footer/Footer';
 import HeaderSecondary from '@layout/HeaderSecondary/HeaderSecondary';
-import History from '@layout/History/History';
-import AboutUsVideo from '@layout/AboutUsVideo/AboutUsVideo';
-import Chef from '@layout/Chef/Chef';
-import Gallery from '@layout/Gallery/Gallery';
 import { getTranslator } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
-
+import { MenuSection } from '@components';
+import { data } from '@constants';
 export async function generateMetadata({ params: { locale } }) {
-	const t = await getTranslator(locale, 'about');
+	const t = await getTranslator(locale, 'menu');
 
 	return {
 		title: t('title'),
@@ -22,13 +19,16 @@ const AboutPage = () => {
 		<>
 			<HeaderSecondary
 				homeLink={t('home-link')}
-				title={`${t('about-us-title')} Gerícht`}
-				path={t('about-us-path')}
+				title={`${t('menu-title')}`}
+				path={t('menu-path')}
 			/>
-			<History />
-			<Chef />
-			<AboutUsVideo />
-			<Gallery />
+			<section className='app__menu-page'>
+				<div className='section__wrapper'>
+					<MenuSection menuData={data.cocktails} title='Cocktails' />
+					<MenuSection menuData={data.wines} title='Wines' />
+					{/* <MenuSection title='Drinks' /> */}
+				</div>
+			</section>
 			<Footer />
 		</>
 	);

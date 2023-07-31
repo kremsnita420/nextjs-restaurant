@@ -71,7 +71,7 @@ const Navbar = ({ home, contact, about, menu, navSiteLogoAlt, langFlag }) => {
 					<Link href={`/about-us`}>{about}</Link>
 				</li>
 				<li>
-					<Link href='/#menu'>{menu}</Link>
+					<Link href='/menu'>{menu}</Link>
 				</li>
 
 				<li>
@@ -119,7 +119,7 @@ const Navbar = ({ home, contact, about, menu, navSiteLogoAlt, langFlag }) => {
 								</Link>
 							</li>
 							<li>
-								<Link onClick={() => setToggleMenu(!toggleMenu)} href='/#menu'>
+								<Link onClick={() => setToggleMenu(!toggleMenu)} href='/menu'>
 									{menu}
 								</Link>
 							</li>

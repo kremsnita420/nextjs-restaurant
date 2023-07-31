@@ -2,8 +2,10 @@ import '@styles/layout/FormSection.scss';
 import { images } from '@constants';
 import { ContactForm, SubHeading } from '@components';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 const FormSection = () => {
+	const t = useTranslations('contact-us');
 	return (
 		<section
 			className='app__form'
@@ -17,18 +19,18 @@ const FormSection = () => {
 			<div className='section__wrapper'>
 				<div className='app__form__form'>
 					<SubHeading
-						title='Contact us'
+						title={t('contact-us-title')}
 						align='flex-start'
 						fontStyle='large_sub_heading'
 					/>
-					<p>Fill the form bellow and we will reply very soon.</p>
+					<p>{t('contact-us-desc')}</p>
 					<ContactForm />
 				</div>
 				<div className='app__form__image'>
 					<Image
 						src={images.findus}
 						placeholder='blur'
-						alt='Find us'
+						alt={t('image-alt')}
 						loading='lazy'
 						style={{
 							maxWidth: '100%',
@@ -40,7 +42,7 @@ const FormSection = () => {
 					<div className='app__form__image__g'>
 						<Image
 							src={images.Gwhite}
-							alt='Letter G'
+							alt={t('g-alt')}
 							as='image'
 							placeholder='blur'
 							loading='lazy'

@@ -11,19 +11,87 @@
 		"nav-site-logo-alt": "Website-Logo",
 		"lang-switch-flag": "Sprachflagge"
 	},
-	"home": {
-		"title": "Startseite",
-		"scroll-button": "Scrollen",
+	"about-us": {
 		"about-us-about-title": "Über uns",
 		"about-us-about-desc": "Kein italienisches kulinarisches Erlebnis ist vollständig ohne die perfekte Weinbegleitung als Ergänzung zu Ihrer Mahlzeit. Unser Restaurant verfügt über eine umfangreiche Auswahl an erlesenen italienischen Weinen aus verschiedenen Regionen Italiens.",
 		"about-us-history-title": "Geschichte",
 		"about-us-history-desc": "Treten Sie ein in unsere italienische Oase, wo Sie von einem warmen und einladenden Ambiente umarmt werden, das den Geist der berühmten italienischen Gastfreundschaft widerspiegelt. Die Einrichtung des Restaurants ist vom rustikalen Charme der italienischen Landschaft inspiriert und verfügt über freiliegende Ziegelwände, gemütliche Holztische und sanfte, stimmungsvolle Beleuchtung.",
 		"read-more": "Weiterlesen"
 	},
+	"special-menu": {
+		"special-menu-subheading": "Menü, das zu Ihrer Palette passt",
+		"special-menu-title": "Heutige Spezialität",
+		"special-menu-subtitle-left": "Wein und Bier",
+		"special-menu-subtitle-right": "Cocktails",
+		"special-menu-image-alt": "Cocktailmixer",
+		"view-more": "Mehr sehen"
+	},
+	"chefs-word": {
+		"chefs-word-subheading": "Das Wort des Chefkochs",
+		"chefs-word-title": "Woran wir glauben",
+		"chefs-word-quote": "Was auch immer du tust, tue es mit Entschlossenheit. Du hast ein Leben zu leben; Mach deine Arbeit mit Leidenschaft und gib dein Bestes. Egal, ob du Koch, Ärztin, Schauspielerin oder Mutter werden möchtest: Sei leidenschaftlich, um das beste Ergebnis zu erzielen..",
+		"chefs-word-job": "Chefkoch und Besitzer",
+		"chefs-word-image-alt": "Chefkoch"
+	},
+	"photo-gallery": {
+		"photo-gallery-title": "Fotogallerie",
+		"photo-gallery-desc": "Das Album „Zuletzt verwendet“ zeigt deine gesamte Fotosammlung in der Reihenfolge, in der du sie deiner Bibliothek hinzugefügt hast, und das Album „Favoriten“ zeigt Fotos und Videos, die du als Favoriten markiert hast.",
+		"view-more": "Mehr sehen"
+	},
+	"footer": {
+		"footer-contact-title": "Kontaktiere uns",
+		"footer-hours-title": "Arbeitszeit",
+		"footer-send-email": "Schicke eine Email an",
+		"footer-quote": "Der beste Weg, um sich selbst zu finden, ist, sich im Dienst an anderen zu verlieren.",
+		"footer-monday": "Montag",
+		"footer-friday": "Freitag",
+		"footer-saturday": "Samstag",
+		"footer-sunday": "Sonntag",
+		"footer-copyright": "Alle Rechte vorbehalten."
+	},
+	"newsletter": {
+		"newsletter-subheading": "Newsletter",
+		"newsletter-title": "Abonniere unseren Newsletter",
+		"newsletter-subtitle": "Und verpasse nie die neuesten Updates!",
+		"newsletter-email-placeholder": "E-Mail-Addresse",
+		"sub-btn": "Abonnieren"
+	},
+	"header-secondary": {
+		"home-link": "Startseite",
+		"about-us-title": "Willkommen zu",
+		"about-us-path": "Über Uns",
+		"contact-us-title": "Kontaktiere uns",
+		"contact-us-path": "Kontaktiere uns",
+		"menu-title": "Speisekarte",
+		"menu-path": "Speisekarte"
+	},
+	"map": {
+		"map-subheading": "Standort",
+		"map-title": "Du findest uns an diesem Standort",
+		"map-directions": "Eine Wegbeschreibung erhältst du über den unten stehenden Link",
+		"open-map-link": "Karte öffnen"
+	},
+	"contact-us": {
+		"contact-us-title": "Kontaktiere uns",
+		"contact-us-desc": "Fülle das untenstehende Formular aus und wir werden dir sehr bald antworten.",
+		"contact-us-name": "Name",
+		"contact-us-email": "Email",
+		"contact-us-message": "Nachricht",
+		"submit-btn": "Einreichen",
+		"image-alt": "Steak mit Tomaten",
+		"g-alt": "Buchstabe G"
+	},
+	"home": {
+		"title": "Startseite",
+		"scroll-button": "Scrollen"
+	},
 	"about": {
 		"title": "Über uns"
 	},
 	"contact": {
 		"title": "Kontaktiere uns"
+	},
+	"menu": {
+		"title": "Unser Menü"
 	}
 }

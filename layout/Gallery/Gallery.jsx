@@ -3,8 +3,11 @@ import '@styles/layout/Gallery.scss';
 import { images } from '@constants';
 import { InstagramGallery, SubHeading } from '@components';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 const Gallery = () => {
+	const t = useTranslations('photo-gallery');
+
 	return (
 		<div className='app-gallery'>
 			<div
@@ -25,16 +28,12 @@ const Gallery = () => {
 						fontStyle='small_sub_heading'
 					/>
 					<div className='large_sub_heading'>
-						<h2>Photo gallery</h2>
+						<h2>{t('photo-gallery-title')}</h2>
 					</div>
-					<p>
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
-						alias iste culpa eos distinctio fuga nihil facere illo impedit,
-						quisquam aspernatur quasi reprehenderit ipsa architecto, molestiae.
-					</p>
+					<p>{t('photo-gallery-desc')}</p>
 
 					<Link href='/' type='button' className='gold__button'>
-						View more
+						{t('view-more')}
 					</Link>
 				</div>
 				<div className='app-gallery__images'>

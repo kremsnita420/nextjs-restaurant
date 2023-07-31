@@ -24,6 +24,7 @@ export async function generateMetadata({ params: { locale } }) {
 	const t = await getTranslator(locale, 'meta-data');
 
 	return {
+		metadataBase: new URL('https://nextjs-restaurant-blond.vercel.app'),
 		title: {
 			default: t('title'),
 			template: `%s | ${t('title')}`,
@@ -35,7 +36,7 @@ export async function generateMetadata({ params: { locale } }) {
 		openGraph: {
 			title: t('title'),
 			description: t('description'),
-			url: 'https://nextjs.org',
+			url: 'https://nextjs-restaurant-blond.vercel.app',
 			siteName: 'Gericht',
 			images: [
 				{

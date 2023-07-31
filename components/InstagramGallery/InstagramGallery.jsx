@@ -14,6 +14,7 @@ import { BsChevronDoubleLeft, BsChevronDoubleRight } from 'react-icons/bs';
 
 const InstagramGallery = () => {
 	const gallery = data.galleryImages;
+
 	return (
 		<>
 			<Swiper
@@ -47,7 +48,7 @@ const InstagramGallery = () => {
 							<Image
 								src={img.imgUrl}
 								placeholder='blur'
-								alt={img.alt}
+								alt={img.altEn}
 								loading='lazy'
 								style={{
 									maxWidth: '100%',

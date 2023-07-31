@@ -11,19 +11,87 @@
 		"nav-site-logo-alt": "Website logo",
 		"lang-switch-flag": "Language flag"
 	},
-	"home": {
-		"title": "Home",
-		"scroll-button": "Scroll",
+	"about-us": {
 		"about-us-about-title": "About us",
 		"about-us-about-desc": "No Italian dining experience is complete without the perfect wine pairing to complement your meal. Our restaurant boasts an extensive selection of exquisite Italian wines sourced from various regions across Italy.",
 		"about-us-history-title": "History",
 		"about-us-history-desc": "Step into our Italian oasis where you'll be embraced by a warm and inviting ambiance that echoes the spirit of Italy's famed hospitality. The restaurant's decor is inspired by the rustic charm of Italian countryside settings, featuring exposed brick walls, cozy wooden tables, and soft, ambient lighting.",
-		"read-more": "Read mor"
+		"read-more": "Read more"
+	},
+	"special-menu": {
+		"special-menu-subheading": "Menu That Fits Your Palette",
+		"special-menu-title": "Today's specials",
+		"special-menu-subtitle-left": "Wine & Beer",
+		"special-menu-subtitle-right": "Cocktails",
+		"special-menu-image-alt": "Cocktail mixer",
+		"view-more": "View more"
+	},
+	"chefs-word": {
+		"chefs-word-subheading": "Chef's word",
+		"chefs-word-title": "What we believe in",
+		"chefs-word-quote": "Whatever you do, do with determination. You have one life to live; do your work with passion and give your best. Whether you want to be a chef, doctor, actor, or a mother, be passionate to get the best result.",
+		"chefs-word-job": "Main chef & owner",
+		"chefs-word-image-alt": "Main chef"
+	},
+	"photo-gallery": {
+		"photo-gallery-title": "Photo gallery",
+		"photo-gallery-desc": "The Recents album shows your entire photo collection in the order that you added them to your library and the Favorites album shows photos and videos that you marked as favorites.",
+		"view-more": "View more"
+	},
+	"footer": {
+		"footer-contact-title": "Contact us",
+		"footer-hours-title": "Working hours",
+		"footer-send-email": "Send email to",
+		"footer-quote": "The best way to find yourself is to lose yourself in the service of others.",
+		"footer-monday": "Monday",
+		"footer-friday": "Friday",
+		"footer-saturday": "Saturday",
+		"footer-sunday": "Sunday",
+		"footer-copyright": "All rights reserved."
+	},
+	"newsletter": {
+		"newsletter-subheading": "Newsletter",
+		"newsletter-title": "Subscribe To Our Newsletter",
+		"newsletter-subtitle": "And never miss latest Updates!",
+		"newsletter-email-placeholder": "Email address",
+		"sub-btn": "Subscribe"
+	},
+	"header-secondary": {
+		"home-link": "Home",
+		"about-us-title": "Welcome to",
+		"about-us-path": "About us",
+		"contact-us-title": "Contact us",
+		"contact-us-path": "Contact us",
+		"menu-title": "Menu",
+		"menu-path": "Menu"
+	},
+	"map": {
+		"map-subheading": "Location",
+		"map-title": "You can find us at this location",
+		"map-directions": "Get directions with link below",
+		"open-map-link": "Open map"
+	},
+	"contact-us": {
+		"contact-us-title": "Contact us",
+		"contact-us-desc": "Fill the form bellow and we will reply very soon.",
+		"contact-us-name": "Name",
+		"contact-us-email": "Email",
+		"contact-us-message": "Message",
+		"submit-btn": "Submit",
+		"image-alt": "Steak with tomatoes",
+		"g-alt": "Letter G"
+	},
+	"home": {
+		"title": "Home",
+		"scroll-button": "Scroll"
 	},
 	"about": {
 		"title": "About Us"
 	},
 	"contact": {
 		"title": "Contact Us"
+	},
+	"menu": {
+		"title": "Our menu"
 	}
 }

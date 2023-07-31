@@ -4,27 +4,27 @@ import gallery from './gallery';
 const wines = [
   {
     title: 'Chapel Hill Shiraz',
-    price: '56',
+    price: '56,00',
     tags: ['AU', 'Bottle'],
   },
   {
     title: 'Catena Malbee',
-    price: '59',
+    price: '59,00',
     tags: ['AU', 'Bottle'],
   },
   {
     title: 'La Vieillw Rose',
-    price: '44',
+    price: '44,00',
     tags: ['FR', '750 ml'],
   },
   {
     title: 'Rhino Pale Ale',
-    price: '31',
+    price: '31,00',
     tags: ['CA', '750 ml'],
   },
   {
     title: 'Irish Guinness',
-    price: '$26',
+    price: '26,00',
     tags: ['IE', '750 ml'],
   },
 ];
@@ -32,27 +32,27 @@ const wines = [
 const cocktails = [
   {
     title: 'Aperol Sprtiz',
-    price: '20',
+    price: '20,00',
     tags: ['Aperol', 'Villa Marchesi prosecco', 'soda', '30 ml'],
   },
   {
     title: "Dark 'N' Stormy",
-    price: '16',
+    price: '16,00',
     tags: ['Dark rum', 'Ginger beer', 'Slice of lime'],
   },
   {
     title: 'Daiquiri',
-    price: '10',
+    price: '10,00',
     tags: ['Rum', 'Citrus juice', 'Sugar'],
   },
   {
     title: 'Old Fashioned',
-    price: '31',
+    price: '31,00',
     tags: ['Bourbon', 'Brown sugar', 'Angostura Bitters'],
   },
   {
     title: 'Negroni',
-    price: '26',
+    price: '26,00',
     tags: ['Gin', 'Sweet Vermouth', 'Campari', 'Orange garnish'],
   },
 ];
@@ -83,19 +83,23 @@ const awards = [
 const galleryImages = [
   {
     imgUrl: images.gallery01,
-    alt: 'Gallery image'
+    altEn: 'Gallery image',
+    altDe: 'Galeriebild'
   },
   {
     imgUrl: images.gallery02,
-    alt: 'Gallery image'
+    altEn: 'Gallery image',
+    altDe: 'Galeriebild'
   },
   {
     imgUrl: images.gallery03,
-    alt: 'Gallery image'
+    altEn: 'Gallery image',
+    altDe: 'Galeriebild'
   },
   {
     imgUrl: images.gallery04,
-    alt: 'Gallery image'
+    altEn: 'Gallery image',
+    altDe: 'Galeriebild'
   },
 ]
 

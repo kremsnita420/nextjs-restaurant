@@ -15,8 +15,11 @@
 		}
 
 		& .app__newsletter__content {
-			max-width: 78rem;
+			max-width: 81rem;
 			margin-inline: auto;
+			& .large_sub_heading {
+				text-align: center;
+			}
 			& .app__newsletter__p {
 				@include p_text(center);
 				margin-bottom: 4rem;

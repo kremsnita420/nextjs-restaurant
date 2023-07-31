@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 
-const Map = () => {
+const Map = ({ mapTitle, mapSubheading, mapDirections, openMapLink }) => {
 	const lat = 46.043809191289355;
 	const lng = 14.580849753458784;
 	const [isMounted, setIsMounted] = useState(false);
@@ -21,12 +21,12 @@ const Map = () => {
 			<section className='app__map'>
 				<div className='section__wrapper'>
 					<SubHeading
-						title='Location'
+						title={mapSubheading}
 						align='center'
 						fontStyle='small_sub_heading'
 					/>
 					<div className='large_sub_heading'>
-						<h2>You will find us at this location</h2>
+						<h2>{mapTitle}</h2>
 					</div>
 					<MapContainer
 						center={[lat, lng]}
@@ -39,13 +39,13 @@ const Map = () => {
 						{lat && lng && (
 							<Marker position={[lat, lng]}>
 								<Popup>
-									Get directions with link below
+									{mapDirections}
 									<br />
 									<Link
 										href='https://goo.gl/maps/3SNxCf1WybtvTrAe8'
 										target='blank'
 										rel='noopener noreferrer'>
-										<strong>Open map</strong>
+										<strong>{openMapLink}</strong>
 									</Link>
 								</Popup>
 							</Marker>

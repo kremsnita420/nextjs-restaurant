@@ -1,6 +1,10 @@
 .app__map {
 	& .section__wrapper {
 		text-align: center;
+
+		& .large_sub_heading {
+			margin-bottom: 3rem;
+		}
 		& .leaflet-container {
 			max-height: 50rem;
 			border: 2px solid $color-golden;
@@ -22,6 +26,9 @@
 		}
 
 		@include respond-to('desktop') {
+			& .large_sub_heading {
+				margin-bottom: 6rem;
+			}
 			& .leaflet-container {
 				& .leaflet-popup-pane {
 					font-size: 1.6rem;
