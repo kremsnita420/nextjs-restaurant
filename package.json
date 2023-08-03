@@ -22,6 +22,7 @@
 		"leaflet": "^1.9.4",
 		"next": "13.4.9",
 		"next-intl": "^3.0.0-beta.9",
+		"next-sanity": "^5.1.3",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-icons": "^4.10.1",
