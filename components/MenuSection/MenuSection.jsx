@@ -5,14 +5,15 @@ const Menu = ({ title, menuData }) => {
 	return (
 		<div className='app__menu-page__section'>
 			<h3 className='app__menu-page__section__title'>{title}</h3>
-			{menuData.map((cocktail, i) => (
-				<MenuItem
-					key={`cocktail-#${i}`}
-					title={cocktail.title}
-					price={cocktail.price}
-					tags={cocktail.tags}
-				/>
-			))}
+			{menuData &&
+				menuData.map((cocktail, i) => (
+					<MenuItem
+						key={`cocktail-#${i}`}
+						title={cocktail.title}
+						price={cocktail.price}
+						desc={cocktail.description}
+					/>
+				))}
 		</div>
 	);
 };

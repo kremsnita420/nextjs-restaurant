@@ -1,6 +1,6 @@
 import '@styles/components/MenuItem.scss';
 
-const MenuItem = ({ title, price, tags }) => {
+const MenuItem = ({ title, price, desc }) => {
 	return (
 		<div className='menu-item'>
 			<div className='menu-item__top'>
@@ -10,11 +10,7 @@ const MenuItem = ({ title, price, tags }) => {
 			</div>
 			<div className='menu-item__bottom'>
 				<div className='menu-item__bottom__tags'>
-					{tags.map((tag, i) => (
-						<span className='menu-tag' key={`tag-#${i}`}>
-							{tag}
-						</span>
-					))}
+					<span className='menu-tag'>{desc}</span>
 				</div>
 			</div>
 		</div>

@@ -1,15 +1,27 @@
 .app__menu-page__section {
-	&,
+	&:not(:last-child) {
+		margin-bottom: 3rem;
+		margin-top: 3rem;
+	}
+	&:last-child {
+		margin-top: 3rem;
+	}
 	&__title {
 		@include special_menu_title;
 		text-align: center;
-		margin-bottom: 3rem;
+		margin-bottom: 2rem;
 	}
 
 	@include respond-to('desktop') {
-		&,
-		&__title {
+		&:not(:last-child) {
 			margin-bottom: 6rem;
+			margin-top: 6rem;
+		}
+		&:last-child {
+			margin-top: 6rem;
+		}
+		&__title {
+			margin-bottom: 4rem;
 		}
 	}
 }
