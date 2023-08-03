@@ -2,6 +2,7 @@ import '@styles/base/page.scss';
 import Footer from '@layout/Footer/Footer';
 import HeaderSecondary from '@layout/HeaderSecondary/HeaderSecondary';
 import { getTranslator } from 'next-intl/server';
+
 import { MenuSection } from '@components';
 export const revalidate = 60; // revalidate this page every 60 seconds
 import { client } from '@lib/sanity';
@@ -14,7 +15,8 @@ export async function generateMetadata({ params: { locale } }) {
 	};
 }
 
-const AboutPage = async () => {
+export default async function AboutPage({ params: { locale } }) {
+	const t = await getTranslator(locale, 'header-secondary');
 	// const t = useTranslations('header-secondary');
 	// Main dishes
 	const mainDishes = await getMainDishes();
@@ -47,7 +49,11 @@ const AboutPage = async () => {
 
 	return (
 		<>
-			<HeaderSecondary homeLink='Home' title='Menu' path='Menu' />
+			<HeaderSecondary
+				homeLink={t('home-link')}
+				title={t('menu-title')}
+				path={t('menu-path')}
+			/>
 			<section className='app__menu-page'>
 				<div className='section__wrapper'>
 					<MenuSection menuData={mainDishesList} title={mainDishesTitle} />
@@ -67,7 +73,7 @@ const AboutPage = async () => {
 			<Footer />
 		</>
 	);
-};
+}
 
 async function getMainDishes() {
 	const query = `*[_type == "mainDishes"]`;
@@ -104,4 +110,3 @@ async function getAlcoholFreeDrinks() {
 	const data = await client.fetch(query);
 	return data;
 }
-export default AboutPage;
