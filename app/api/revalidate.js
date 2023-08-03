@@ -2,12 +2,6 @@ import { isValidRequest } from '@sanity/webhook'
 
 const secret = 'ofwUPCz05sHgM0xq+de5axjTzIlfLtjYWq9x081O'
 
-import { isValidRequest } from "@sanity/webhook"
-
-
-
-
-
 export default async function handler(req, res) {
     if (req.method !== "POST") {
         console.error("Must be a POST request")
