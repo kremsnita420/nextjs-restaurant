@@ -20,34 +20,33 @@ export default async function AboutPage({ params: { locale } }) {
 	const t = await getTranslator(locale, 'header-secondary');
 	// const t = useTranslations('header-secondary');
 	// Main dishes
-	const mainDishes = await getMainDishes();
-	const mainDishesTitle = mainDishes[0]?.title;
-	const mainDishesList = mainDishes[0]?.mainDishesList;
+	const mainDishes = await getMainDishes(locale);
+	const mainDishesTitle = mainDishes?.title;
+	const mainDishesList = mainDishes?.mainDishesList;
 	// Pizzas
-	const pizzas = await getPizzas();
-	const pizzasTitle = pizzas[0]?.title;
-	const pizzasList = pizzas[0]?.pizzaList;
+	const pizzas = await getPizzas(locale);
+	const pizzasTitle = pizzas?.title;
+	const pizzasList = pizzas?.pizzaList;
 
 	// Salads
-	const salads = await getSalads();
-	const saladsTitle = salads[0]?.title;
-	const saladsList = salads[0]?.saladsList;
+	const salads = await getSalads(locale);
+	const saladsTitle = salads?.title;
+	const saladsList = salads?.saladsList;
 
 	// Desserts
-	const desserts = await getDesserts();
-	const dessertsTitle = desserts[0]?.title;
-	const dessertsList = desserts[0]?.dessertsList;
+	const desserts = await getDesserts(locale);
+	const dessertsTitle = desserts?.title;
+	const dessertsList = desserts?.dessertsList;
 
 	// Alcoholic drinks
 	const alcoholDrinks = await getAlcoholDrinks(locale);
 	const alcoholDrinksTitle = alcoholDrinks?.title;
 	const alcoholDrinksList = alcoholDrinks?.alcoholDrinksList;
-	console.log('title: ', alcoholDrinks);
-	console.log(locale);
+
 	// Alcoholic free drinks
-	const alcoholFreeDrinks = await getAlcoholFreeDrinks();
-	const alcoholFreeDrinksTitle = alcoholFreeDrinks[0]?.title;
-	const alcoholFreeDrinksList = alcoholFreeDrinks[0]?.alcoholFreeDrinksList;
+	const alcoholFreeDrinks = await getAlcoholFreeDrinks(locale);
+	const alcoholFreeDrinksTitle = alcoholFreeDrinks?.title;
+	const alcoholFreeDrinksList = alcoholFreeDrinks?.alcoholFreeDrinksList;
 
 	return (
 		<>
@@ -77,26 +76,26 @@ export default async function AboutPage({ params: { locale } }) {
 	);
 }
 
-async function getMainDishes() {
-	const query = `*[_type == "mainDishes"]`;
+async function getMainDishes(locale) {
+	const query = `*[_type == "mainDishes" && language == "${locale}"][0]`;
 	const data = await client.fetch(query);
 	return data;
 }
 
-async function getPizzas() {
-	const query = `*[_type == "pizzas"]`;
+async function getPizzas(locale) {
+	const query = `*[_type == "pizzas" && language == "${locale}"][0]`;
 	const data = await client.fetch(query);
 	return data;
 }
 
-async function getSalads() {
-	const query = `*[_type == "salads"]`;
+async function getSalads(locale) {
+	const query = `*[_type == "salads" && language == "${locale}"][0]`;
 	const data = await client.fetch(query);
 	return data;
 }
 
-async function getDesserts() {
-	const query = `*[_type == "desserts"]`;
+async function getDesserts(locale) {
+	const query = `*[_type == "desserts" && language == "${locale}"][0]`;
 	const data = await client.fetch(query);
 	return data;
 }
@@ -107,8 +106,8 @@ async function getAlcoholDrinks(locale) {
 	return data;
 }
 
-async function getAlcoholFreeDrinks() {
-	const query = `*[_type == "alcoholFreeDrinks"]`;
+async function getAlcoholFreeDrinks(locale) {
+	const query = `*[_type == "alcoholFreeDrinks" && language == "${locale}"][0]`;
 	const data = await client.fetch(query);
 	return data;
 }
