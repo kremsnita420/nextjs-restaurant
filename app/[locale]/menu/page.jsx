@@ -39,10 +39,11 @@ export default async function AboutPage({ params: { locale } }) {
 	const dessertsList = desserts[0]?.dessertsList;
 
 	// Alcoholic drinks
-	const alcoholDrinks = await getAlcoholDrinks();
-	const alcoholDrinksTitle = alcoholDrinks[0]?.title;
-	const alcoholDrinksList = alcoholDrinks[0]?.alcoholDrinksList;
-
+	const alcoholDrinks = await getAlcoholDrinks(locale);
+	const alcoholDrinksTitle = alcoholDrinks?.title;
+	const alcoholDrinksList = alcoholDrinks?.alcoholDrinksList;
+	console.log('title: ', alcoholDrinks);
+	console.log(locale);
 	// Alcoholic free drinks
 	const alcoholFreeDrinks = await getAlcoholFreeDrinks();
 	const alcoholFreeDrinksTitle = alcoholFreeDrinks[0]?.title;
@@ -100,8 +101,8 @@ async function getDesserts() {
 	return data;
 }
 
-async function getAlcoholDrinks() {
-	const query = `*[_type == "alcoholDrinks"]`;
+async function getAlcoholDrinks(locale) {
+	const query = `*[_type == "alcoholDrinks" && language == "${locale}"][0]`;
 	const data = await client.fetch(query);
 	return data;
 }
