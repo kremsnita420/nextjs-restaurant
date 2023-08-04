@@ -5,7 +5,7 @@ import { SubHeading } from '@components';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 const AboutUsIntro = () => {
-	const t = useTranslations('about-us');
+	const t = useTranslations('about-us-intro');
 	return (
 		<section
 			className='app-aboutus'

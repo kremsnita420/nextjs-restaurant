@@ -19,9 +19,6 @@
 
 	@include respond-to('desktop') {
 		& form {
-			max-width: 65rem;
-			margin-left: 0;
-
 			& *:not(button) {
 				margin-bottom: 4rem;
 			}

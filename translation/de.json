@@ -1,7 +1,23 @@
 {
 	"meta-data": {
-		"title": "Restaurant Gericht",
-		"description": "Ein fantastisches, stilvolles Restaurant, das authentisches Essen serviert."
+		"title": "Genießen Sie authentische italienische Aromen in unserem exquisiten Restaurant | Feine kulinarische Köstlichkeiten",
+		"description": "Genießen Sie die reichhaltige italienische Küche in unserem renommierten Restaurant. Von klassischen Nudelgerichten bis hin zu köstlichen Holzofenpizzas – erleben Sie die Essenz Italiens in jedem Bissen. Begleiten Sie uns auf eine unvergessliche kulinarische Reise. Guten Appetit!"
+	},
+	"home": {
+		"title": "Startseite",
+		"scroll-button": "Scrollen"
+	},
+	"about": {
+		"title": "Entdecken Sie die Essenz Italiens: Unsere authentische italienische Restaurantgeschichte",
+		"description": "Tauchen Sie ein in die reichen Aromen und Traditionen Italiens im Gericht. Entdecken Sie unsere Seite „Über uns“, um zu erfahren, wie unsere leidenschaftlichen Köche den authentischen Geschmack Italiens auf Ihren Tisch bringen. Jedes Gericht, von hausgemachter Pasta bis hin zu traditioneller Holzofenpizza, erzählt eine Geschichte des italienischen kulinarischen Erbes. Begleiten Sie uns auf einer gastronomischen Reise durch die vielfältigen Regionen Italiens und genießen Sie die Leidenschaft und Authentizität, die unser Restaurant ausmachen."
+	},
+	"contact": {
+		"title": "Genießen Sie authentische italienische Aromen | Kontaktiere uns",
+		"description": "Erleben Sie die Essenz Italiens im Gericht. Kontaktieren Sie uns, um einen Tisch zu reservieren oder sich nach unserer köstlichen Speisekarte zu erkundigen. Genießen Sie handgefertigte Gerichte, die mit den besten Zutaten zubereitet werden. Hier beginnt Ihre kulinarische Reise. Guten Appetit!"
+	},
+	"menu": {
+		"title": "Genießen Sie authentische italienische Aromen: Entdecken Sie unsere exquisite Restaurantkarte",
+		"description": "Genießen Sie die Essenz Italiens mit unserer sorgfältig zusammengestellten Speisekarte, die eine Symphonie der Aromen präsentiert, die Sie in das Herz der Toskana entführt. Von herzhaften Nudelgerichten bis hin zu köstlichen Risottos – erleben Sie die feinste italienische Küche im Gericht. Begleiten Sie uns auf eine unvergessliche kulinarische Reise voller Leidenschaft, Tradition und kulinarischer Exzellenz."
 	},
 	"navbar": {
 		"home": "Startseite",
@@ -11,12 +27,22 @@
 		"nav-site-logo-alt": "Website-Logo",
 		"lang-switch-flag": "Sprachflagge"
 	},
-	"about-us": {
+	"about-us-intro": {
 		"about-us-about-title": "Über uns",
 		"about-us-about-desc": "Kein italienisches kulinarisches Erlebnis ist vollständig ohne die perfekte Weinbegleitung als Ergänzung zu Ihrer Mahlzeit. Unser Restaurant verfügt über eine umfangreiche Auswahl an erlesenen italienischen Weinen aus verschiedenen Regionen Italiens.",
 		"about-us-history-title": "Geschichte",
 		"about-us-history-desc": "Treten Sie ein in unsere italienische Oase, wo Sie von einem warmen und einladenden Ambiente umarmt werden, das den Geist der berühmten italienischen Gastfreundschaft widerspiegelt. Die Einrichtung des Restaurants ist vom rustikalen Charme der italienischen Landschaft inspiriert und verfügt über freiliegende Ziegelwände, gemütliche Holztische und sanfte, stimmungsvolle Beleuchtung.",
 		"read-more": "Weiterlesen"
+	},
+	"our-history": {
+		"subheading": "Unsere Geschichte",
+		"title": "Seit über einem Jahrzehnt im Dienste unserer Kunden",
+		"history": "Das charmante italienische Restaurant „Gericht“ wurde vor einem Jahrhundert gegründet und hat unauslöschliche Spuren in der kulinarischen Geschichte hinterlassen. Die Trattoria wurde 1923 vom italienischen Einwanderer Antonio Rossi eröffnet und entwickelte sich schnell zu einem beliebten Juwel in der Nachbarschaft. Mit über Generationen weitergegebenen Rezepten präsentierte Gericht authentische italienische Aromen und fängt die Essenz Italiens in jedem Gericht ein. Im Laufe der Jahre erlebte es Momente der Freude, Romantik und Kameradschaft und wurde zu einem kulturellen Eckpfeiler der Gemeinschaft. Sein rustikales Ambiente, ergänzt durch den Duft von frischem Basilikum und köchelnden Soßen, zog Gäste aus nah und fern an. Im Wandel der Zeit hat Gericht seine Traditionen bewahrt und gleichzeitig moderne kulinarische Trends aufgegriffen. Mittlerweile wird das Restaurant in der vierten Generation von der Familie Rossi geführt und würdigt weiterhin sein Vermächtnis und lädt seine Gäste dazu ein, einen Hauch von Geschichte und ein Stück Italien zu genießen, so wie sie es schon im letzten Jahrhundert getan haben."
+	},
+	"about-us-video": {
+		"subheading": "Über uns",
+		"title": "Schöne Stunden bei uns",
+		"quote": "Gönnen Sie sich funkelnde Momente, wenn die Sonne untergeht, das Lachen harmoniert und die Gläser klirren. Bei der Happy Hour unseres Restaurants geht es nicht nur um ermäßigte Getränke; Es ist eine Symphonie der Freude, ein Pausenknopf für die Hektik des Tages."
 	},
 	"special-menu": {
 		"special-menu-subheading": "Menü, das zu Ihrer Palette passt",
@@ -80,18 +106,5 @@
 		"submit-btn": "Einreichen",
 		"image-alt": "Steak mit Tomaten",
 		"g-alt": "Buchstabe G"
-	},
-	"home": {
-		"title": "Startseite",
-		"scroll-button": "Scrollen"
-	},
-	"about": {
-		"title": "Über uns"
-	},
-	"contact": {
-		"title": "Kontaktiere uns"
-	},
-	"menu": {
-		"title": "Unser Menü"
 	}
 }

@@ -1,7 +1,23 @@
 {
 	"meta-data": {
-		"title": "Restaurant Gericht",
-		"description": "An amazing classy restaurant that serves authentic food."
+		"title": "Savor Authentic Italian Flavors at Our Exquisite Restaurant | Fine Dining Delights",
+		"description": "Indulge in the rich tapestry of Italian cuisine at our renowned restaurant. From classic pasta dishes to delectable wood-fired pizzas, experience the essence of Italy in every bite. Join us for an unforgettable dining journey. Buon appetito!"
+	},
+	"home": {
+		"title": "Home",
+		"scroll-button": "Scroll"
+	},
+	"about": {
+		"title": "Discover the Essence of Italy: Our Authentic Italian Restaurant Story",
+		"description": "Immerse yourself in Italy's rich flavours and traditions at Gericht. Explore our about us page to learn how our passionate chefs bring the authentic taste of Italy to your table. Every dish from homemade pasta to traditional wood-fired pizza tells a story of Italian culinary heritage. Join us on a gastronomic journey through Italy's diverse regions and savour the passion and authenticity that define our restaurant."
+	},
+	"contact": {
+		"title": "Savor Authentic Italian Flavors | Contact Us",
+		"description": "Experience the essence of Italy at Gericht. Contact us to reserve a table or inquire about our delectable menu. Indulge in handcrafted dishes prepared with the finest ingredients. Your culinary journey starts here. Buon Appetito!"
+	},
+	"menu": {
+		"title": "Delight in Authentic Italian Flavors: Explore Our Exquisite Restaurant Menu",
+		"description": "Savor the essence of Italy with our meticulously crafted menu, showcasing a symphony of flavors that transport you to the heart of Tuscany. From savory pasta dishes to mouthwatering risottos, experience the finest Italian cuisine in Gericht. Join us for an unforgettable dining journey filled with passion, tradition, and culinary excellence."
 	},
 	"navbar": {
 		"home": "Home",
@@ -11,12 +27,22 @@
 		"nav-site-logo-alt": "Website logo",
 		"lang-switch-flag": "Language flag"
 	},
-	"about-us": {
+	"about-us-intro": {
 		"about-us-about-title": "About us",
 		"about-us-about-desc": "No Italian dining experience is complete without the perfect wine pairing to complement your meal. Our restaurant boasts an extensive selection of exquisite Italian wines sourced from various regions across Italy.",
 		"about-us-history-title": "History",
 		"about-us-history-desc": "Step into our Italian oasis where you'll be embraced by a warm and inviting ambiance that echoes the spirit of Italy's famed hospitality. The restaurant's decor is inspired by the rustic charm of Italian countryside settings, featuring exposed brick walls, cozy wooden tables, and soft, ambient lighting.",
 		"read-more": "Read more"
+	},
+	"our-history": {
+		"subheading": "Our history",
+		"title": "Serving customers for over a decade",
+		"history": "Established a century ago, the charming Italian restaurant, 'Gericht', has carved an indelible mark in culinary history. Opened in 1923 by Italian immigrant Antonio Rossi, the trattoria quickly became a beloved neighborhood gem. With recipes passed down through generations, Gericht showcased authentic Italian flavors, capturing the essence of Italy in every dish. Over the years, it witnessed moments of joy, romance, and camaraderie, becoming a cultural cornerstone in the community. Its rustic ambiance, complemented by the aroma of fresh basil and simmering sauces, drew patrons from far and wide. Through changing times, Gericht preserved its traditions while embracing modern culinary trends. Now run by the fourth generation of the Rossi family, the restaurant continues to honor its legacy, inviting patrons to savor a taste of history and a slice of Italy, just as they have for the past century."
+	},
+	"about-us-video": {
+		"subheading": "About us",
+		"title": "Happy hours with us",
+		"quote": "Indulge in moments that sparkle as the sun sets, as laughter harmonizes and glasses clink. Our restaurant's happy hour isn't just about discounted drinks; it's a symphony of joy, a pause button for the day's hustle."
 	},
 	"special-menu": {
 		"special-menu-subheading": "Menu That Fits Your Palette",
@@ -80,18 +106,5 @@
 		"submit-btn": "Submit",
 		"image-alt": "Steak with tomatoes",
 		"g-alt": "Letter G"
-	},
-	"home": {
-		"title": "Home",
-		"scroll-button": "Scroll"
-	},
-	"about": {
-		"title": "About Us"
-	},
-	"contact": {
-		"title": "Contact Us"
-	},
-	"menu": {
-		"title": "Our menu"
 	}
 }

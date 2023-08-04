@@ -81,12 +81,12 @@ const Navbar = ({ home, contact, about, menu, navSiteLogoAlt, langFlag }) => {
 			<div className='app__navbar-language'>
 				<ul className='language-switcher'>
 					<li>
-						<Link href='/' locale='de'>
+						<Link href={'/'} locale='de'>
 							<Image width={33} height={33} src={images.DE} alt={langFlag} />
 						</Link>
 					</li>
 					<li>
-						<Link href='/' locale='en'>
+						<Link href={'/'} locale='en'>
 							<Image width={33} height={33} src={images.UK} alt={langFlag} />
 						</Link>
 					</li>

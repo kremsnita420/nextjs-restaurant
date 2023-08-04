@@ -2,7 +2,7 @@ import '@styles/base/page.scss';
 import Footer from '@layout/Footer/Footer';
 import HeaderSecondary from '@layout/HeaderSecondary/HeaderSecondary';
 // import Map from '@layout/Map/Map';
-import ContactUs from '@layout/ContactUs/ContactUs';
+import FormSection from '@layout/FormSection/FormSection';
 import { useMemo } from 'react';
 import dynamic from 'next/dynamic';
 import { getTranslator } from 'next-intl/server';
@@ -36,7 +36,7 @@ const ContactPage = () => {
 				mapDirections={tt('map-directions')}
 				openMapLink={tt('open-map-link')}
 			/>
-			<ContactUs />
+			<FormSection />
 
 			<Footer />
 		</>

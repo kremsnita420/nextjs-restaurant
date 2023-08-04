@@ -2,26 +2,24 @@ import '@styles/layout/History.scss';
 import { Stats, SubHeading } from '@components';
 import Image from 'next/image';
 import { images } from '@constants';
+import { useTranslations } from 'next-intl';
 
 const History = () => {
+	const t = useTranslations('our-history');
 	return (
 		<section className='app__history'>
 			<div className='section__wrapper'>
 				<SubHeading
-					title='Our history'
+					title={t('subheading')}
 					align='center'
 					fontStyle='small_sub_heading'
 				/>
 				<div className='large_sub_heading'>
-					<h2>Serving customers for over a decade</h2>
+					<h2>{t('title')}</h2>
 				</div>
 				<div className='app__history__content'>
 					<div className='app__history__content__left'>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
-							pharetra adipiscing ultrices vulputate posuere tristique. In sed
-							odio nec aliquet eu proin mauris et.
-						</p>
+						<p>{t('history')}</p>
 
 						<Image
 							className='app-aboutus__middle__knife'

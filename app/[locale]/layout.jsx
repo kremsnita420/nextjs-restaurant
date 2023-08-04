@@ -27,7 +27,7 @@ export async function generateMetadata({ params: { locale } }) {
 		metadataBase: new URL('https://nextjs-restaurant-blond.vercel.app'),
 		title: {
 			default: t('title'),
-			template: `%s | ${t('title')}`,
+			template: `${t('title')} | %s`,
 		},
 		description: t('description'),
 		icons: {

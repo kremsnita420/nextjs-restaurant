@@ -12,6 +12,7 @@ export async function generateMetadata({ params: { locale } }) {
 
 	return {
 		title: t('title'),
+		description: t('description'),
 	};
 }
 

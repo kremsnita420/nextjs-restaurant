@@ -1,25 +1,23 @@
 import '@styles/layout/AboutUsVideo.scss';
 import { SubHeading } from '@components';
 import { VideoComponent } from '@components';
+import { useTranslations } from 'next-intl';
 
 const AboutUsVideo = () => {
+	const t = useTranslations('about-us-video');
 	return (
 		<section className='app__aboutus-video'>
 			<div className='section__wrapper'>
 				<SubHeading
-					title='About us'
+					title={t('subheading')}
 					align='center'
 					fontStyle='small_sub_heading'
 				/>
 				<div className='large_sub_heading'>
-					<h2>Happy Hours with Us</h2>
+					<h2>{t('title')}</h2>
 				</div>
 
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra
-					adipiscing ultrices vulputate posuere tristique. In sed odio nec
-					aliquet eu proin mauris et.
-				</p>
+				<p>{t('quote')}</p>
 				<VideoComponent videoSrc='/assets/meal.mp4' />
 			</div>
 		</section>
