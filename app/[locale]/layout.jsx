@@ -1,6 +1,7 @@
 import Navbar from '@layout/Navbar/Navbar';
 import { images } from '@constants';
 import '@styles/base/globals.scss';
+import '@styles/base/page.scss';
 import { Poppins, Lobster } from 'next/font/google';
 import { useLocale, useTranslations } from 'next-intl';
 import { notFound } from 'next/navigation';

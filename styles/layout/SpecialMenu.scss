@@ -32,6 +32,9 @@
 			}
 			&__left,
 			&__right {
+				&__section {
+					width: 100%;
+				}
 				& > h3 {
 					@include special_menu_title;
 					width: fit-content;

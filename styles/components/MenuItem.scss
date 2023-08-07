@@ -11,6 +11,7 @@
 		justify-content: space-between;
 		&__title {
 			@include special_menu_item;
+			margin-bottom: 1rem;
 		}
 
 		&__line {

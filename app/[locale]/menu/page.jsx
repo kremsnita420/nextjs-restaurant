@@ -1,4 +1,4 @@
-import '@styles/base/page.scss';
+import '@styles/layout/menu-page.scss';
 import Footer from '@layout/Footer/Footer';
 import HeaderSecondary from '@layout/HeaderSecondary/HeaderSecondary';
 import { getTranslator } from 'next-intl/server';

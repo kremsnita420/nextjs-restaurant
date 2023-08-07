@@ -47,8 +47,8 @@
 	"special-menu": {
 		"special-menu-subheading": "Menü, das zu Ihrer Palette passt",
 		"special-menu-title": "Heutige Spezialität",
-		"special-menu-subtitle-left": "Wein und Bier",
-		"special-menu-subtitle-right": "Cocktails",
+		"special-menu-subtitle-left": "Essen",
+		"special-menu-subtitle-right": "Trinken",
 		"special-menu-image-alt": "Cocktailmixer",
 		"view-more": "Mehr sehen"
 	},

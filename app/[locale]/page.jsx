@@ -1,4 +1,3 @@
-import '@styles/base/page.scss';
 import Header from '@layout/Header/Header';
 import AboutUsIntro from '@layout/AboutUsIntro/AboutUsIntro';
 import SpecialMenu from '@layout/SpecialMenu/SpecialMenu';
@@ -17,12 +16,12 @@ export async function generateMetadata({ params: { locale } }) {
 	};
 }
 
-const Home = () => {
+export default function Home({ params: { locale } }) {
 	return (
 		<>
 			<Header />
 			<AboutUsIntro />
-			<SpecialMenu />
+			<SpecialMenu locale={locale} />
 			<Chef />
 			<Suspense>
 				<Intro />
@@ -31,5 +30,4 @@ const Home = () => {
 			<Footer />
 		</>
 	);
-};
-export default Home;
+}
