@@ -48,8 +48,6 @@ export default async function SpecialMenu({ locale }) {
 		}
 	);
 
-	console.log('Promoted to front: ', dessertsList);
-
 	return (
 		<section className='app-special-menu' id='menu'>
 			<div className='section__wrapper'>

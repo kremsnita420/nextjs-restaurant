@@ -3,6 +3,7 @@ import '@styles/layout/Header.scss';
 import Link from 'next/link';
 import { BiDownArrow } from 'react-icons/bi';
 import { useLocale, useTranslations } from 'next-intl';
+import { images } from '@constants';
 const dataEn = [
 	{
 		subTitle: 'Chase the new flavour',
@@ -10,6 +11,7 @@ const dataEn = [
 		pText:
 			'Our restaurant takes great pride in offering an authentic Italian culinary experience that transports you straight to the heart of Italy',
 		link: 'Explore menu',
+		image: images.trattoria2,
 		imageAlt: 'Welcome picture',
 	},
 	{
@@ -18,6 +20,7 @@ const dataEn = [
 		pText:
 			"Step into our Italian oasis where you'll be embraced by a warm and inviting ambiance that echoes the spirit of Italy's famed hospitality. The restaurant's decor is inspired by the rustic charm of Italian countryside settings, featuring exposed brick walls, cozy wooden tables, and soft, ambient lighting.",
 		link: 'Read more',
+		image: images.trattoria,
 		imageAlt: 'Welcome picture',
 	},
 	{
@@ -26,6 +29,7 @@ const dataEn = [
 		pText:
 			'No Italian dining experience is complete without the perfect wine pairing to complement your meal. Our restaurant boasts an extensive selection of exquisite Italian wines sourced from various regions across Italy.',
 		link: 'Explore menu',
+		image: images.welcome613,
 		imageAlt: 'Welcome picture',
 	},
 ];
@@ -36,6 +40,7 @@ const dataDe = [
 		pText:
 			'Unser Restaurant ist stolz darauf, ein authentisches italienisches kulinarisches Erlebnis zu bieten, das Sie direkt ins Herz Italiens entführt',
 		link: 'Entdecken Sie das Menü',
+		image: images.trattoria2,
 		imageAlt: 'Willkommensbild',
 	},
 	{
@@ -44,6 +49,7 @@ const dataDe = [
 		pText:
 			'Treten Sie ein in unsere italienische Oase, wo Sie von einem warmen und einladenden Ambiente umarmt werden, das den Geist der berühmten italienischen Gastfreundschaft widerspiegelt. Die Einrichtung des Restaurants ist vom rustikalen Charme der italienischen Landschaft inspiriert und verfügt über freiliegende Ziegelwände, gemütliche Holztische und sanfte, stimmungsvolle Beleuchtung.',
 		link: 'Weiterlesen',
+		image: images.trattoria,
 		imageAlt: 'Willkommensbild',
 	},
 	{
@@ -52,6 +58,7 @@ const dataDe = [
 		pText:
 			'Kein italienisches kulinarisches Erlebnis ist vollständig ohne die perfekte Weinbegleitung als Ergänzung zu Ihrer Mahlzeit. Unser Restaurant verfügt über eine umfangreiche Auswahl an erlesenen italienischen Weinen aus verschiedenen Regionen Italiens.',
 		link: 'Weiterlesen',
+		image: images.welcome613,
 		imageAlt: 'Willkommensbild',
 	},
 ];

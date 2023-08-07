@@ -16,10 +16,10 @@ const HeaderSlider = ({ data }) => {
 		<>
 			<Swiper
 				loop={true}
-				autoplay={{
-					delay: 3500,
-					disableOnInteraction: false,
-				}}
+				// autoplay={{
+				// 	delay: 3500,
+				// 	disableOnInteraction: false,
+				// }}
 				spaceBetween={10}
 				slidesPerView={1}
 				watchSlidesProgress
@@ -49,13 +49,13 @@ const HeaderSlider = ({ data }) => {
 							</div>
 							<div className='app-header__image'>
 								<Image
-									src={images.welcome613}
+									src={slide.image}
 									placeholder='blur'
 									alt={slide.imageAlt}
 									as='image'
 									loading='lazy'
 									style={{
-										maxWidth: '100%',
+										width: '100%',
 										height: '100%',
 									}}
 									sizes='(max-width: 550px) 100vw, (max-width: 1200px) 50vw, 33vw'
